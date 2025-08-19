@@ -98,7 +98,6 @@ class KevinEvaluator(BaseRAGEvaluator):
         
     def setup_client(self, **kwargs) -> dict:
         """Initialize the RAG system client with memory optimizations."""
-        print("Setting up Hybrid GraphRAG client...")
         
         postgres_uri = os.getenv("POSTGRES_URI")
         if not postgres_uri:
@@ -160,6 +159,7 @@ class KevinEvaluator(BaseRAGEvaluator):
         """Setup database tables for the hybrid knowledge graph."""
         with conn.cursor() as cur:
             cur.execute("CREATE EXTENSION IF NOT EXISTS vector;")
+            cur.execute("CREATE EXTENSION IF NOT EXISTS hstore;") # Often useful with JSONB
 
             # Drop existing tables to ensure a clean schema
             cur.execute("DROP TABLE IF EXISTS graph_edges CASCADE;")
@@ -212,150 +212,132 @@ class KevinEvaluator(BaseRAGEvaluator):
             conn.commit()
 
     def ingest(self, client: dict, docs_dir: Path, **kwargs) -> List[str]:
-        """Ingest documents into the hybrid knowledge graph."""
+        """Ingests documents by extracting a knowledge graph and storing it."""
         print(f"Ingesting documents from: {docs_dir}")
         doc_files = list(docs_dir.glob("*.pdf"))
         if not doc_files:
             raise FileNotFoundError(f"No PDF files found in {docs_dir}")
 
-        print(f"Found {len(doc_files)} PDF documents:")
-        for doc_file in doc_files:
-            print(f"  - {doc_file.name}")
-
         conn = client["db_conn"]
-        model = client["model"]
-        processor = client["processor"]
-        
         for doc_file in tqdm(doc_files, desc="Ingesting Documents", unit="doc"):
-            self._ingest_document_as_graph(conn, model, processor, doc_file)
+            print(f"\n  - Processing {doc_file.name} into knowledge graph...")
+            full_text = "\n".join(self._extract_enhanced_text_data(doc_file)[2])
+            
+            graph = self._extract_graph_from_document(full_text)
+            if graph and graph.get("nodes") and graph.get("edges"):
+                self._insert_graph_into_db(conn, doc_file, graph)
+            else:
+                print(f"    - Could not extract a valid graph from {doc_file.name}")
 
         print(f"\n✓ Successfully ingested {len(doc_files)} documents into the graph.")
         return [doc.name for doc in doc_files]
 
-    def _ingest_document_as_graph(self, conn: psycopg2.extensions.connection, model, processor, doc_file: Path):
-        """Extracts, embeds, and stores a single document as graph nodes and edges."""
-        print(f"\n  - Processing {doc_file.name} into graph structure...")
-        
-        doc_hash = hashlib.sha256(doc_file.read_bytes()).hexdigest()
+    def _extract_graph_from_document(self, document_text: str) -> Optional[Dict[str, List]]:
+        """Uses a powerful LLM prompt to extract a full knowledge graph from a document."""
+        prompt = f"""You are a high-precision financial analyst. Your task is to extract a detailed knowledge graph from the provided text from a financial document. 
 
-        # 1. Extract text, tables, and images from the document
-        images = self._convert_pdf_to_images_pymupdf(doc_file)
-        texts, tables_data, text_blocks = self._extract_enhanced_text_data(doc_file)
-        
-        # 2. Create a single parent document entry
-        with conn.cursor() as cur:
-            cur.execute(
-                "INSERT INTO document_pages (doc_id, image_path) VALUES (%s, %s) ON CONFLICT (doc_id) DO NOTHING",
-                (doc_file.name, str(self.images_dir / f"{doc_file.stem}_page_001.png"))
-            )
-        conn.commit()
+Extract the following node types: 
+- Organization (e.g., \"Palantir\", \"NVIDIA\")
+- Metric (e.g., \"Total Revenue\", \"US Commercial Customer Count\")
+- TimePeriod (e.g., \"Q1 2025\", \"Fiscal Year 2026\")
+- Value (e.g., \"$634M\", \"83%\")
+- TextChunk (A meaningful chunk of text that contains one or more entities)
 
-        # 3. Process each page to create and insert both text and image nodes
-        all_nodes_for_doc = []
-        for i, (img, text, table, block) in enumerate(zip(images, texts, tables_data, text_blocks)):
-            page_num = i + 1
-            
-            # Create a node for the text content of the page
-            if block.strip():
-                content = self._combine_text_sources(text, table, block)
-                text_embedding = self._embed_text_chunk(content)
-                text_properties = {
-                    "embedding_type": "text",
-                    "embedding_vector": text_embedding
-                }
-                all_nodes_for_doc.append((doc_file.name, page_num, 'text_chunk', content, json.dumps(text_properties)))
+Extract the following relationship types:
+- HAS_METRIC (Organization -> Metric)
+- HAS_VALUE (Metric -> Value)
+- IN_PERIOD (Value -> TimePeriod)
+- DESCRIBED_IN (Any entity -> TextChunk)
 
-            # Create a node for the visual content of the page
-            image_embedding = self._embed_image_chunk(img, model, processor)
-            image_properties = {
-                "embedding_type": "visual",
-                "embedding_vector": image_embedding
-            }
-            image_content = f"Visual content of page {page_num} from document {doc_file.name}"
-            all_nodes_for_doc.append((doc_file.name, page_num, 'image_chunk', image_content, json.dumps(image_properties)))
+First, create all the TextChunk nodes for the document. Then, create the specific entities (Organization, Metric, TimePeriod, Value) and link them to the TextChunk they came from using the DESCRIBED_IN relationship.
 
-        with conn.cursor() as cur:
-            if all_nodes_for_doc:
-                extras.execute_batch(cur, 
-                    "INSERT INTO graph_nodes (doc_id, page_number, node_type, content, properties) VALUES (%s, %s, %s, %s, %s)",
-                    all_nodes_for_doc
-                )
-                print(f"    ✓ Stored {len(all_nodes_for_doc)} text and image nodes for {doc_file.name}")
-        conn.commit()
+Respond ONLY with a single JSON object with two keys: "nodes" and "edges". The nodes should have a unique "id" (a simple integer starting from 1), a "type", and "properties" (e.g., {{'name': 'Total Revenue'}} or {{'amount': 634, 'unit': 'million'}}).
 
-        # 4. Infer and store relationships
-        self._infer_relationships(conn, doc_file, doc_hash)
+EXAMPLE:
+Input Text: \"In Q1 2025, Palantir's total revenue grew to $634M.\"
+Output JSON:
+{{
+  "nodes": [
+    {{ "id": 1, "type": "TextChunk", "properties": {{'content': 'In Q1 2025, Palantir's total revenue grew to $634M.'}} }},
+    {{ "id": 2, "type": "Organization", "properties": {{'name': 'Palantir'}} }},
+    {{ "id": 3, "type": "Metric", "properties": {{'name': 'Total Revenue'}} }},
+    {{ "id": 4, "type": "TimePeriod", "properties": {{'value': 'Q1 2025'}} }},
+    {{ "id": 5, "type": "Value", "properties": {{'amount': 634, 'unit': 'million'}} }}
+  ],
+  "edges": [
+    {{ "source": 2, "target": 3, "label": "HAS_METRIC" }},
+    {{ "source": 3, "target": 5, "label": "HAS_VALUE" }},
+    {{ "source": 5, "target": 4, "label": "IN_PERIOD" }},
+    {{ "source": 2, "target": 1, "label": "DESCRIBED_IN" }},
+    {{ "source": 3, "target": 1, "label": "DESCRIBED_IN" }},
+    {{ "source": 4, "target": 1, "label": "DESCRIBED_IN" }},
+    {{ "source": 5, "target": 1, "label": "DESCRIBED_IN" }}
+  ]
+}}
 
-    def _embed_text_chunk(self, text: str) -> List[float]:
-        """Encodes text into a vector embedding using the loaded SentenceTransformer model."""
-        return self.embedding_model.encode(text, convert_to_tensor=False).tolist()
+DOCUMENT TEXT:
+{document_text[:15000]}  # Limit context to avoid exceeding model limits
 
-    def _embed_image_chunk(self, img: Image.Image, model, processor) -> List[float]:
-        """Encodes an image into a vector embedding using the ColPali model."""
-        with torch.no_grad():
-            inputs = processor.process_images([img]).to(self.device)
-            for key, tensor in inputs.items():
-                if tensor.is_floating_point():
-                    inputs[key] = tensor.to(self.model_dtype)
-            embeddings = model(**inputs).cpu().float().numpy()
-        # ColPali returns a batch of embeddings, we take the first one.
-        # It also has a shape (1, num_patches, dim), we average over the patches for a single vector.
-        return np.mean(embeddings[0], axis=0).tolist()
-
-    def _infer_relationships(self, conn: psycopg2.extensions.connection, doc_file: Path):
-        """Uses an LLM to infer relationships between nodes of a document."""
-        print(f"    - Inferring relationships for {doc_file.name}...")
-        
-        with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
-            cur.execute("SELECT node_id, content FROM graph_nodes WHERE doc_id = %s ORDER BY page_number, node_id", (doc_file.name,))
-            nodes = cur.fetchall()
-
-        if len(nodes) < 2:
-            print("    - Not enough nodes to infer relationships.")
-            return
-
-        # Create a simplified context for the LLM
-        context_for_llm = ""
-        for node in nodes:
-            context_for_llm += f"Node {node['node_id']}: {node['content'][:500]}\n\n"
-
-        prompt = f"""You are a graph creation expert. Based on the following text nodes from a document, identify directed relationships between them. A relationship should be a tuple of (source_node_id, target_node_id, relationship_label). The label should describe the connection (e.g., 'EXPANDS_ON', 'PROVIDES_CONTEXT_FOR', 'CONTRADICTS').
-
-Respond ONLY with a JSON object containing a single key "relationships" which is a list of these tuples. Example: {{'relationships': [[1, 2, "EXPANDS_ON"], [3, 4, "PROVIDES_CONTEXT_FOR"]]}}
-
-Nodes:
-{context_for_llm}
-
-Relationships:"""
-
+JSON OUTPUT:
+"""
         try:
+            print("    - Extracting graph with LLM...")
             response = completion(
                 model="o4-mini",
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"}
             )
-            relationships_data = response.choices[0].message.content
-
-            if not relationships_data:
-                print("    - LLM returned an empty response, no relationships inferred.")
-                return
-
-            relationships = json.loads(relationships_data).get('relationships', [])
-
-            if relationships:
-                with conn.cursor() as cur:
-                    extras.execute_batch(cur, 
-                        "INSERT INTO graph_edges (source_node_id, target_node_id, relationship_label) VALUES (%s, %s, %s)",
-                        relationships
-                    )
-                conn.commit()
-                print(f"    ✓ Stored {len(relationships)} relationships.")
-            else:
-                print("    - No relationships were inferred from the LLM response.")
-
+            graph_data = response.choices[0].message.content
+            if graph_data:
+                return json.loads(graph_data)
+            return None
         except Exception as e:
-            print(f"    ⚠️ LLM call for relationship inference failed: {e}")
-            conn.rollback()
+            print(f"    ⚠️ LLM call for graph extraction failed: {e}")
+            return None
+
+    def _insert_graph_into_db(self, conn: psycopg2.extensions.connection, doc_file: Path, graph: Dict[str, List]):
+        """Inserts nodes and edges from an extracted graph into the database."""
+        nodes = graph.get("nodes", [])
+        edges = graph.get("edges", [])
+        temp_to_real_id_map = {}
+
+        with conn.cursor() as cur:
+            # Insert nodes and get their real, database-generated IDs
+            for node in nodes:
+                temp_id = node["id"]
+                node_type = node["type"]
+                properties = node.get("properties", {})
+                content = properties.get("content", properties.get("name", ""))
+                
+                cur.execute(
+                    "INSERT INTO graph_nodes (doc_id, page_number, node_type, content, properties) VALUES (%s, %s, %s, %s, %s) RETURNING node_id",
+                    (doc_file.name, 0, node_type, content, json.dumps(properties))
+                )
+                real_id = cur.fetchone()[0]
+                temp_to_real_id_map[temp_id] = real_id
+            print(f"    ✓ Stored {len(nodes)} nodes.")
+
+            # Prepare edges with the real database IDs
+            edges_to_insert = []
+            for edge in edges:
+                source_temp_id = edge["source"]
+                target_temp_id = edge["target"]
+                label = edge["label"]
+                
+                if source_temp_id in temp_to_real_id_map and target_temp_id in temp_to_real_id_map:
+                    source_real_id = temp_to_real_id_map[source_temp_id]
+                    target_real_id = temp_to_real_id_map[target_temp_id]
+                    edges_to_insert.append((source_real_id, target_real_id, label))
+            
+            # Batch insert all edges
+            if edges_to_insert:
+                extras.execute_batch(cur, 
+                    "INSERT INTO graph_edges (source_node_id, target_node_id, relationship_label) VALUES (%s, %s, %s)",
+                    edges_to_insert
+                )
+                print(f"    ✓ Stored {len(edges_to_insert)} relationships.")
+
+        conn.commit()
 
     def _convert_pdf_to_images_pymupdf(self, pdf_path: Path) -> List[Image.Image]:
         """Convert PDF to images using PyMuPDF."""
@@ -415,98 +397,6 @@ Relationships:"""
             sources.append(f"Structured Layout:\n{blocks.strip()}")
         
         return "\n\n".join(sources) if sources else "Visual elements with no extractable text."
-
-    def _format_table_content(self, table_content: List[List]) -> str:
-        """Format table content into readable text."""
-        return "\n".join([" | ".join([str(c).strip() for c in r if c is not None]) for r in table_content if r])
-
-    def _ingest_with_multivector_processing(self, conn: psycopg2.extensions.connection, 
-                                          model, processor, doc_files: List[Path]):
-        """Ingest documents using ColPali multi-vector approach."""
-        for doc_file in tqdm(doc_files, desc="Ingesting Documents", unit="doc"):
-            print(f"  - Processing {doc_file.name}")
-            
-            doc_hash = hashlib.sha256(doc_file.read_bytes()).hexdigest()
-            cache_file = self.embedding_cache_dir / f"{doc_file.stem}_{doc_hash[:10]}_multivector.npz"
-
-            if cache_file.exists():
-                print(f"    ✓ Loading embeddings from cache: {cache_file.name}")
-                data = np.load(cache_file, allow_pickle=True)
-                all_page_embeddings = data['embeddings']
-                image_paths = data['image_paths'].tolist()
-            else:
-                print("    - Generating new multi-vector embeddings...")
-                images = self._convert_pdf_to_images_pymupdf(doc_file)
-                print(f"    ✓ Converted to {len(images)} page images")
-                
-                all_page_embeddings, image_paths = [], []
-                for i, img in enumerate(tqdm(images, desc="    Embedding Pages", unit="page", leave=False)):
-                    img_path = self.images_dir / f"{doc_file.stem}_page_{i+1:03d}.png"
-                    img.save(img_path)
-                    image_paths.append(str(img_path))
-                    
-                    with torch.no_grad():
-                        inputs = processor.process_images([img]).to(self.device)
-                        for key, tensor in inputs.items():
-                            if tensor.is_floating_point():
-                                inputs[key] = tensor.to(self.model_dtype)
-                        embeddings = model(**inputs).cpu().float().numpy()
-                        all_page_embeddings.append(embeddings[0])
-
-                np.savez(cache_file, embeddings=all_page_embeddings, image_paths=np.array(image_paths))
-                print("    ✓ Saved multi-vector embeddings to cache")
-
-            extracted_texts, tables_data, text_blocks = self._extract_enhanced_text_data(doc_file)
-            
-            if len(all_page_embeddings) > 0:
-                self._ensure_correct_embedding_dimension(conn, all_page_embeddings[0].shape[1])
-            
-            with conn.cursor() as cur:
-                for i, (embeds, path) in enumerate(zip(all_page_embeddings, image_paths)):
-                    cur.execute("""
-                        INSERT INTO document_pages (doc_id, page_number, image_path, extracted_text, tables_data, text_blocks) 
-                        VALUES (%s, %s, %s, %s, %s, %s) RETURNING id
-                    """, (doc_file.name, i + 1, path, extracted_texts[i], tables_data[i], text_blocks[i]))
-                    page_id = cur.fetchone()[0]
-                    
-                    patch_data = [(page_id, j, v.tolist()) for j, v in enumerate(embeds)]
-                    extras.execute_batch(cur, "INSERT INTO patch_embeddings (page_id, patch_index, embedding) VALUES (%s, %s, %s)", patch_data)
-            
-            conn.commit()
-            print(f"    ✓ Stored {len(all_page_embeddings)} pages with multi-vector embeddings")
-
-    def _ensure_correct_embedding_dimension(self, conn: psycopg2.extensions.connection, actual_dim: int):
-        """Update embedding dimension in database schema if needed."""
-        with conn.cursor() as cur:
-            current_dim = -1
-            try:
-                # This is a robust way to get the vector dimension from the schema
-                cur.execute("""
-                    SELECT atttypmod FROM pg_attribute 
-                    WHERE attrelid = 'patch_embeddings'::regclass AND attname = 'embedding';
-                """)
-                result = cur.fetchone()
-                if result:
-                    current_dim = result[0]
-            except psycopg2.errors.UndefinedTable:
-                current_dim = -1 # Table doesn't exist
-
-            if current_dim != actual_dim:
-                conn.rollback() # End any existing transaction before DDL
-                print(f"    Schema mismatch or table not found. Recreating 'patch_embeddings' for dimension: {actual_dim}")
-                cur.execute("DROP TABLE IF EXISTS patch_embeddings CASCADE;")
-                cur.execute(f"""
-                    CREATE TABLE patch_embeddings (
-                        id SERIAL PRIMARY KEY,
-                        page_id INTEGER REFERENCES document_pages(id) ON DELETE CASCADE,
-                        patch_index INTEGER NOT NULL,
-                        embedding vector({actual_dim}),
-                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-                    );
-                """)
-                cur.execute("CREATE INDEX patch_embeddings_page_id_idx ON patch_embeddings (page_id);")
-                cur.execute("CREATE INDEX patch_embeddings_embedding_idx ON patch_embeddings USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);")
-                conn.commit()
 
     def query(self, client: dict, question: str, **kwargs) -> str:
         """Query using the hybrid GraphRAG engine."""
