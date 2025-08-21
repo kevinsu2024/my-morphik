@@ -1,0 +1,2123 @@
+Question: Based on Palantir’s reported Q1 2024 and Q1 2025 revenue figures, what are the year-over-year growth rates for total revenue, total revenue excluding strategic commercial contracts, and US revenue; what is the standard deviation across those growth rates; what is the standard deviation of the quarter-over-quarter changes in the Rule of 40 score from Q2 2023 through Q1 2025; and how do these volatility metrics relate to the Rule of 40 score reported for Q1 2025?
+
+Attempt 1 Query: Based on Palantir’s reported Q1 2024 and Q1 2025 revenue figures, what are the year-over-year growth rates for total revenue, total revenue excluding strategic commercial contracts, and US revenue; what is the standard deviation across those growth rates; what is the standard deviation of the quarter-over-quarter changes in the Rule of 40 score from Q2 2023 through Q1 2025; and how do these volatility metrics relate to the Rule of 40 score reported for Q1 2025?
+
+Image Paths:
+['document_images/palantir_q1_investor_presentation_page_022.png', 'document_images/palantir_q1_investor_presentation_page_032.png', 'document_images/palantir_q1_investor_presentation_page_021.png'] 
+
+ Context:
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 22 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_022.png
+Text Content:
+Financials
+Q1
+Total revenue excluding 
+strategic commercial contracts 
+grew 44% Y/Y and 7% Q/Q.
+Q1 2024
+Q1 2025
+Total Revenue Growth excl. Strategic
+Commercial Contracts
+$600M
+$400M
+$879M
+$610M
++44%
+$800M
+$1000M
+//
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Financials
+Q1
+
+
+Total revenue excluding 
+strategic commercial contracts 
+grew 44% Y/Y and 7% Q/Q.
+
+
+Q1 2024
+Q1 2025
+
+
+Total Revenue Growth excl. Strategic
+Commercial Contracts
+
+
+$600M
+
+
+$400M
+
+
+$879M
+
+
+$610M
+
+
++44%
+
+
+$800M
+
+
+$1000M
+
+
+//
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 22 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 32 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_032.png
+Text Content:
+Reconciliation of Rule of 40
+Year-Over-Year Revenue Growth
+Adjusted Operating Margin
+Rule of 40
+Q1 2024
+21%
+36%
+57%
+Q2 2024
+27%
+37%
+64%
+Q3 2024
+30%
+38%
+68%
+Q4 2024
+36%
+45%
+81%
+Q1 2025
+39%
+44%
+83%
+Q4 2023
+20%
+34%
+54%
+Q3 2023
+17%
+29%
+46%
+Q2 2023
+13%
+25%
+38%
+Appendix
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Reconciliation of Rule of 40
+
+
+Year-Over-Year Revenue Growth
+
+
+Adjusted Operating Margin
+
+
+Rule of 40
+
+
+Q1 2024
+
+
+21%
+
+
+36%
+
+
+57%
+
+
+Q2 2024
+
+
+27%
+
+
+37%
+
+
+64%
+
+
+Q3 2024
+
+
+30%
+
+
+38%
+
+
+68%
+
+
+Q4 2024
+
+
+36%
+
+
+45%
+
+
+81%
+
+
+Q1 2025
+
+
+39%
+
+
+44%
+
+
+83%
+
+
+Q4 2023
+
+
+20%
+
+
+34%
+
+
+54%
+
+
+Q3 2023
+
+
+17%
+
+
+29%
+
+
+46%
+
+
+Q2 2023
+
+
+13%
+
+
+25%
+
+
+38%
+
+
+Appendix
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 32 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 21 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_021.png
+Text Content:
+Financials
+Q1
+Q1 2024
+Q1 2025
+Total Revenue Growth
+$600M
+$500M
+$884M
+$634M
++39%
+$800M
+$700M
+$900M
+Total revenue grew 39% Y/Y and 
+7% Q/Q, driven by the contnued 
+acceleraton of our US business.
+//
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Financials
+Q1
+
+
+Q1 2024
+Q1 2025
+
+
+Total Revenue Growth
+
+
+$600M
+
+
+$500M
+
+
+$884M
+
+
+$634M
+
+
++39%
+
+
+$800M
+
+
+$700M
+
+
+$900M
+Total revenue grew 39% Y/Y and 
+7% Q/Q, driven by the contnued 
+acceleraton of our US business.
+
+
+//
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 21 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 20 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_020.png
+Text Content:
+Commercial Revenue Growth
+Q1 2024
+Q1 2025
+$397M
+$299M
++33%
+//
+Financials
+Q1
+$500M
+$450M
+$400M
+$350M
+$300M
+$250M
+Government Revenue Growth
+$487M
+$335M
++45%
+Q1 2024
+Q1 2025
+$300M
+$250M
+$350M
+$400M
+$200M
+//
+$200M
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Commercial Revenue Growth
+
+
+Q1 2024
+Q1 2025
+
+
+$397M
+
+
+$299M
+
+
++33%
+
+
+//
+
+
+Financials
+Q1
+
+
+$500M
+
+
+$450M
+
+
+$400M
+
+
+$350M
+
+
+$300M
+
+
+$250M
+
+
+Government Revenue Growth
+
+
+$487M
+
+
+$335M
+
+
++45%
+
+
+Q1 2024
+Q1 2025
+
+
+$300M
+
+
+$250M
+
+
+$350M
+
+
+$400M
+
+
+$200M
+
+
+//
+
+
+$200M
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 20 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 3 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_003.png
+Text Content:
+Adjusted free cash ﬂow of $370 million; 42% margin
+Business Update
+Q1
+© 2025 Palantr Technologies Inc.
+Q1 2025 Highlights
+The term “Strategic Commercial Contracts” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025. Rule of 40 refers to the sum of our revenue growth rate year-over-year and our adjusted operatng margin. The value of deals closed reﬂects the total contract value of contracts that have been entered 
+into with, or awarded by, our government and commercial customers and includes existng contractual obligatons and unexercised contract optons available to those customers. Adjusted free cash ﬂow and adjusted free cash ﬂow margin exclude employer payroll taxes related to stock-based compensaton and 
+purchases of property and equipment. Adjusted operatng income and adjusted operatng margin excludes stock-based compensaton expense and related employer payroll taxes. Total contract value (“TCV”) is the total potental lifetme value of contracts entered into with, or awarded by, our customers at the tme of 
+contract executon and remaining deal value (“RDV”) is the total remaining value of contracts as of the end of the reportng period. Except as noted below, TCV and RDV each presume the exercise of all contract optons available to our customers and no terminaton of contracts. However, the majority of our contracts are 
+subject to terminaton provisions, including for convenience, and there can be no guarantee that contracts are not terminated or that contract optons will be exercised. Further, RDV may exclude all or some porton of the value of certain commercial contracts as a result of our ongoing assessments of customers’ ﬁnancial 
+conditon, including the consideraton of such customers’ ability and intenton to pay, and whether such contracts contnue to meet the criteria for revenue recogniton, among other factors. Adjusted EPS excludes stock-based compensaton expense, related employer payroll taxes, and income tax eﬀects and adjustments. 
+Please see the appendix for reconciliatons of these and other non-GAAP ﬁnancial measures to the most directly comparable GAAP measures.
+US commercial revenue grew +71% Y/Y and +19% Q/Q to $255 million
+US revenue grew +55% Y/Y and +13% Q/Q to $628 million
+US commercial remaining deal value (“RDV”) grew +127% Y/Y and +30% Q/Q to $2.3 billion
+Adjusted operatng income of $391 million; 44% margin
+US government revenue grew +45% Y/Y and +9% Q/Q to $373 million
+Closed 139 deals of at least $1 million, 51 deals of at least $5 million, and 31 deals of at least $10 million
+Revenue grew +39% Y/Y and +7% Q/Q to $884 million; +44% Y/Y and +7% Q/Q excluding Strategic Commercial Contracts
+Highest ever quarter of US commercial total contract value (“TCV”) of $810 million; +183% Y/Y
+Adjusted EPS of $0.13
+Rule of 40 score of 83%
+
+Structured Layout:
+Adjusted free cash ﬂow of $370 million; 42% margin
+
+
+Business Update
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q1 2025 Highlights
+
+
+The term “Strategic Commercial Contracts” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025. Rule of 40 refers to the sum of our revenue growth rate year-over-year and our adjusted operatng margin. The value of deals closed reﬂects the total contract value of contracts that have been entered 
+into with, or awarded by, our government and commercial customers and includes existng contractual obligatons and unexercised contract optons available to those customers. Adjusted free cash ﬂow and adjusted free cash ﬂow margin exclude employer payroll taxes related to stock-based compensaton and 
+purchases of property and equipment. Adjusted operatng income and adjusted operatng margin excludes stock-based compensaton expense and related employer payroll taxes. Total contract value (“TCV”) is the total potental lifetme value of contracts entered into with, or awarded by, our customers at the tme of 
+contract executon and remaining deal value (“RDV”) is the total remaining value of contracts as of the end of the reportng period. Except as noted below, TCV and RDV each presume the exercise of all contract optons available to our customers and no terminaton of contracts. However, the majority of our contracts are 
+subject to terminaton provisions, including for convenience, and there can be no guarantee that contracts are not terminated or that contract optons will be exercised. Further, RDV may exclude all or some porton of the value of certain commercial contracts as a result of our ongoing assessments of customers’ ﬁnancial 
+conditon, including the consideraton of such customers’ ability and intenton to pay, and whether such contracts contnue to meet the criteria for revenue recogniton, among other factors. Adjusted EPS excludes stock-based compensaton expense, related employer payroll taxes, and income tax eﬀects and adjustments. 
+Please see the appendix for reconciliatons of these and other non-GAAP ﬁnancial measures to the most directly comparable GAAP measures.
+
+
+US commercial revenue grew +71% Y/Y and +19% Q/Q to $255 million
+
+
+US revenue grew +55% Y/Y and +13% Q/Q to $628 million
+
+
+US commercial remaining deal value (“RDV”) grew +127% Y/Y and +30% Q/Q to $2.3 billion
+
+
+Adjusted operatng income of $391 million; 44% margin
+
+
+US government revenue grew +45% Y/Y and +9% Q/Q to $373 million
+
+
+Closed 139 deals of at least $1 million, 51 deals of at least $5 million, and 31 deals of at least $10 million
+
+
+Revenue grew +39% Y/Y and +7% Q/Q to $884 million; +44% Y/Y and +7% Q/Q excluding Strategic Commercial Contracts
+
+
+Highest ever quarter of US commercial total contract value (“TCV”) of $810 million; +183% Y/Y
+
+
+Adjusted EPS of $0.13
+
+
+Rule of 40 score of 83%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 3 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 18 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_018.png
+Text Content:
+Financials
+Q1
+Q1 2024
+Q1 2025
+US Revenue Growth
+$300M
+$200M
+$100M
+$628M
+$406M
++55%
+$400M
+$500M
+$700M
+$600M
+US revenue grew 55% Y/Y and 13% 
+Q/Q, driven by acceleraton in US 
+commercial and US government.
+© 2025 Palantr Technologies Inc.
+$—M
+
+Structured Layout:
+Financials
+Q1
+
+
+Q1 2024
+Q1 2025
+
+
+US Revenue Growth
+
+
+$300M
+
+
+$200M
+
+
+$100M
+
+
+$628M
+
+
+$406M
+
+
++55%
+
+
+$400M
+
+
+$500M
+
+
+$700M
+
+
+$600M
+
+
+US revenue grew 55% Y/Y and 13% 
+Q/Q, driven by acceleraton in US 
+commercial and US government.
+
+
+© 2025 Palantr Technologies Inc.
+
+
+$—M
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 18 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 15 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_015.png
+Text Content:
+Our Q1 2025 GAAP earnings per 
+share was $0.08.
+Financials
+Q1
+$50.0M
+$100.0M
+$150.0M
+$200.0M
+$250.0M
+$—M
+Q1 2025
+GAAP Net Income
+Net income when excluding one-tme SAR-related expenses excludes the one-tme accelerated stock-based 
+compensaton expense, employer payroll taxes, and income tax eﬀects and adjustments related to our Market-Vestng 
+SARs. The term “Market-Vestng SARs” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025.
+© 2025 Palantr Technologies Inc.
+$105.5M
+$134.1M
+$79.0M
+$143.5M
+Net  income when
+excluding one-time
+SAR-related expenses
+$164.7M
+$214.0M
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+Structured Layout:
+Our Q1 2025 GAAP earnings per 
+share was $0.08.
+
+
+Financials
+Q1
+
+
+$50.0M
+
+
+$100.0M
+
+
+$150.0M
+
+
+$200.0M
+
+
+$250.0M
+
+
+$—M
+
+
+Q1 2025
+
+
+GAAP Net Income
+
+
+Net income when excluding one-tme SAR-related expenses excludes the one-tme accelerated stock-based 
+compensaton expense, employer payroll taxes, and income tax eﬀects and adjustments related to our Market-Vestng 
+SARs. The term “Market-Vestng SARs” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025.
+© 2025 Palantr Technologies Inc.
+
+
+$105.5M
+
+
+$134.1M
+
+
+$79.0M
+
+
+$143.5M
+
+
+Net  income when
+excluding one-time
+SAR-related expenses
+
+
+$164.7M
+
+
+$214.0M
+
+
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 15 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 19 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_019.png
+Text Content:
+US Government Revenue Growth
+$373M
+$257M
++45%
+Q1 2024
+Q1 2025
+$125M
+$175M
+$200M
+$275M
+$250M
+$225M
+$150M
+$100M
+$75M
+US Commercial Revenue Growth
+Q1 2024
+Q1 2025
+$255M
+$150M
++71%
+Financials
+Q1
+//
+//
+© 2025 Palantr Technologies Inc.
+$300M
+$250M
+$450M
+$400M
+$350M
+$200M
+$150M
+$100M
+$50M
+
+Structured Layout:
+US Government Revenue Growth
+
+
+$373M
+
+
+$257M
+
+
++45%
+
+
+Q1 2024
+Q1 2025
+
+
+$125M
+
+
+$175M
+
+
+$200M
+
+
+$275M
+
+
+$250M
+
+
+$225M
+
+
+$150M
+
+
+$100M
+
+
+$75M
+
+
+US Commercial Revenue Growth
+
+
+Q1 2024
+Q1 2025
+
+
+$255M
+
+
+$150M
+
+
++71%
+
+
+Financials
+Q1
+
+
+//
+//
+
+
+© 2025 Palantr Technologies Inc.
+
+
+$300M
+
+
+$250M
+
+
+$450M
+
+
+$400M
+
+
+$350M
+
+
+$200M
+
+
+$150M
+
+
+$100M
+
+
+$50M
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 19 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 28 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_028.png
+Text Content:
+Q2 2025
+Adjusted income from operatons of between
+$401 million — $405 million.
+GAAP operatng income and net income in each 
+quarter of this year.
+Revenue of between
+$934 million — $938 million.
+For second quarter 2025, we expect: 
+For full year 2025, we expect: 
+FY 2025
+Adjusted income from operatons of between
+$1.711 billion — $1.723 billion.
+Adjusted free cash ﬂow of between
+$1.6 billion — $1.8 billion. 
+Revenue of between
+$3.890 billion — $3.902 billion.
+US commercial revenue in excess of
+$1.178 billion, representng a growth 
+rate of at least 68%.
+Financials
+Q1
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Q2 2025
+
+
+Adjusted income from operatons of between
+$401 million — $405 million.
+
+
+GAAP operatng income and net income in each 
+quarter of this year.
+
+
+Revenue of between
+$934 million — $938 million.
+
+
+For second quarter 2025, we expect: 
+For full year 2025, we expect: 
+
+
+FY 2025
+
+
+Adjusted income from operatons of between
+$1.711 billion — $1.723 billion.
+
+
+Adjusted free cash ﬂow of between
+$1.6 billion — $1.8 billion. 
+
+
+Revenue of between
+$3.890 billion — $3.902 billion.
+
+
+US commercial revenue in excess of
+$1.178 billion, representng a growth 
+rate of at least 68%.
+
+
+Financials
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 28 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 31 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_031.png
+Text Content:
+© 2025 Palantr Technologies Inc.
+Revenue Excluding Strategic Commercial Contracts
+($ THOUSANDS)
+Revenue 
+Revenue Excluding Strategic Commercial Contracts
+Q4 2024
+$
+827,519
+9,584
+$
+817,935
+Q1 2025
+$
+883,855
+5,147
+$
+878,708
+Q1 2024
+$
+634,338
+23,898
+$
+610,440
+Revenue from Strategic Commercial Contracts
+Less:
+Appendix
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+© 2025 Palantr Technologies Inc.
+
+
+Revenue Excluding Strategic Commercial Contracts
+
+
+($ THOUSANDS)
+
+
+Revenue 
+
+
+Revenue Excluding Strategic Commercial Contracts
+
+
+Q4 2024
+
+
+$
+827,519
+
+
+9,584
+
+
+$
+817,935
+
+
+Q1 2025
+
+
+$
+883,855
+
+
+5,147
+
+
+$
+878,708
+
+
+Q1 2024
+
+
+$
+634,338
+
+
+23,898
+
+
+$
+610,440
+
+
+Revenue from Strategic Commercial Contracts
+
+
+Less:
+
+
+Appendix
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 31 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 30 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_030.png
+Text Content:
+Additional Metrics and Notes
+($ MILLIONS)
+($ BILLIONS)
+Long-Term RPO
+Total RPO
+Net dollar retention was 124% in Q1 2025.
+Billings
+Short-Term RPO
+$
+$
+$
+$
+Appendix
+Net dollar retenton is calculated as (a) revenue for the trailing twelve months as of each period atributable to the customers as counted for the prior trailing twelve months divided by (b) revenue for the prior trailing twelve months recognized from those same customers.
+Remaining performance obligatons (“RPO”) reﬂects the values of contracts that have been entered into with, or awarded by, our government and commercial customers and represents non-cancelable contracted revenue that has not yet been recognized, which includes deferred revenue and, in certain instances, 
+amounts that will be invoiced. We have elected the practcal expedient, as permited under Accountng Standards Codiﬁcaton 606—Revenue from Contracts with Customers, to not disclose remaining performance obligatons for contracts with original terms of twelve months or less.  
+Q1 2025
+1.00
+1.90
+905
+0.90
+© 2025 Palantr Technologies Inc.
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+Q2 2024
+0.68
+       1.37
+718
+0.69
+Q3 2024
+0.84
+       1.57
+823
+0.73
+Q4 2024
+0.90
+1.73
+779
+0.83
+Q1 2024
+0.61
+         1.30
+625
+0.69
+
+Structured Layout:
+Additional Metrics and Notes
+
+
+($ MILLIONS)
+
+
+($ BILLIONS)
+
+
+Long-Term RPO
+
+
+Total RPO
+
+
+Net dollar retention was 124% in Q1 2025.
+
+
+Billings
+
+
+Short-Term RPO
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+Appendix
+
+
+Net dollar retenton is calculated as (a) revenue for the trailing twelve months as of each period atributable to the customers as counted for the prior trailing twelve months divided by (b) revenue for the prior trailing twelve months recognized from those same customers.
+Remaining performance obligatons (“RPO”) reﬂects the values of contracts that have been entered into with, or awarded by, our government and commercial customers and represents non-cancelable contracted revenue that has not yet been recognized, which includes deferred revenue and, in certain instances, 
+amounts that will be invoiced. We have elected the practcal expedient, as permited under Accountng Standards Codiﬁcaton 606—Revenue from Contracts with Customers, to not disclose remaining performance obligatons for contracts with original terms of twelve months or less.  
+
+
+Q1 2025
+
+
+1.00
+
+
+1.90
+
+
+905
+
+
+0.90
+
+
+© 2025 Palantr Technologies Inc.
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+$
+
+
+Q2 2024
+
+
+0.68
+
+
+       1.37
+
+
+718
+
+
+0.69
+
+
+Q3 2024
+
+
+0.84
+
+
+       1.57
+
+
+823
+
+
+0.73
+
+
+Q4 2024
+
+
+0.90
+
+
+1.73
+
+
+779
+
+
+0.83
+
+
+Q1 2024
+
+
+0.61
+
+
+         1.30
+
+
+625
+
+
+0.69
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 30 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 39 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_039.png
+Text Content:
+Reconciliation of Revenue to Billings
+($ THOUSANDS)
+Revenue
+Change in Contract Liabilities
+Billings
+Appendix
+Q1 2025
+$
+883,855
+21,044
+$
+904,899
+© 2025 Palantr Technologies Inc.
+Q1 2024
+$
+634,338
+(9,051)
+$
+625,287
+Q2 2024
+$
+678,134
+39,934
+$
+718,068
+Q4 2024
+$
+827,519
+(48,636)
+$
+778,883
+Q3 2024
+$
+725,516
+97,924
+$
+823,440
+
+Structured Layout:
+Reconciliation of Revenue to Billings
+
+
+($ THOUSANDS)
+
+
+Revenue
+
+
+Change in Contract Liabilities
+
+
+Billings
+
+
+Appendix
+
+
+Q1 2025
+
+
+$
+883,855
+
+
+21,044
+
+
+$
+904,899
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q1 2024
+
+
+$
+634,338
+
+
+(9,051)
+
+
+$
+625,287
+
+
+Q2 2024
+
+
+$
+678,134
+
+
+39,934
+
+
+$
+718,068
+
+
+Q4 2024
+
+
+$
+827,519
+
+
+(48,636)
+
+
+$
+778,883
+
+
+Q3 2024
+
+
+$
+725,516
+
+
+97,924
+
+
+$
+823,440
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 39 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 16 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_016.png
+Text Content:
+Our Q1 2025 GAAP operatng 
+margin was 20%.
+Financials
+Q1
+$—M
+GAAP Operatng Income
+$50.0M
+$100.0M
+$150.0M
+$200.0M
+$250.0M
+Operatng income when excluding one-tme SAR-related expenses excludes the one-tme accelerated 
+stock-based compensaton expense and employer payroll taxes related to our Market-Vestng SARs.
+© 2025 Palantr Technologies Inc.
+$80.9M
+$105.3M
+$11.0M
+$113.1M
+$142.3M
+$176.0M
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+Operating income when
+excluding one-time
+SAR-related expenses
+Q1 2025
+
+Structured Layout:
+Our Q1 2025 GAAP operatng 
+margin was 20%.
+
+
+Financials
+Q1
+
+
+$—M
+
+
+GAAP Operatng Income
+
+
+$50.0M
+
+
+$100.0M
+
+
+$150.0M
+
+
+$200.0M
+
+
+$250.0M
+
+
+Operatng income when excluding one-tme SAR-related expenses excludes the one-tme accelerated 
+stock-based compensaton expense and employer payroll taxes related to our Market-Vestng SARs.
+© 2025 Palantr Technologies Inc.
+
+
+$80.9M
+
+
+$105.3M
+
+
+$11.0M
+
+
+$113.1M
+
+
+$142.3M
+
+
+$176.0M
+
+
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+
+Operating income when
+excluding one-time
+SAR-related expenses
+
+
+Q1 2025
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 16 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 17 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_017.png
+Text Content:
+Financials
+Q1
+Rule of 40
+50%
+40%
+30%
+Q1 2025
+60%
+70%
+90%
+80%
+//
+© 2025 Palantr Technologies Inc.
+Q2 2023
+Q3 2023
+Q4 2023
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+38%
+46%
+54%
+57%
+64%
+68%
+81%
+83%
+
+Structured Layout:
+Financials
+Q1
+
+
+Rule of 40
+
+
+50%
+
+
+40%
+
+
+30%
+
+
+Q1 2025
+
+
+60%
+
+
+70%
+
+
+90%
+
+
+80%
+
+
+//
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q2 2023
+Q3 2023
+Q4 2023
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+
+38%
+
+
+46%
+
+
+54%
+57%
+
+
+64%
+
+
+68%
+
+
+81%
+
+
+83%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 17 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 23 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_023.png
+Text Content:
+We contnue to invest aggressively 
+in AIP and the US while driving 
+operatng leverage at scale.
+Q1 2025 adjusted operatng income was 
+$391M, representng a margin of 44%.
+ADJUSTED OPERATING MARGIN
+$300M
+$450M
+$400M
+$350M
+$250M
+$200M
+$100M
+$150M
+$50M
+Q1 2025
+$391M
+44%
+$—M
+Financials
+Q1
+© 2025 Palantr Technologies Inc.
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+$254M
+37%
+$276M
+$373M
+38%
+45%
+$226M
+36%
+
+Structured Layout:
+We contnue to invest aggressively 
+in AIP and the US while driving 
+operatng leverage at scale.
+
+
+Q1 2025 adjusted operatng income was 
+$391M, representng a margin of 44%.
+
+
+ADJUSTED OPERATING MARGIN
+
+
+$300M
+
+
+$450M
+
+
+$400M
+
+
+$350M
+
+
+$250M
+
+
+$200M
+
+
+$100M
+
+
+$150M
+
+
+$50M
+
+
+Q1 2025
+
+
+$391M
+
+
+44%
+
+
+$—M
+
+
+Financials
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+
+$254M
+
+
+37%
+
+
+$276M
+
+
+$373M
+
+
+38%
+
+
+45%
+
+
+$226M
+
+
+36%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 23 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 10 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_010.png
+Text Content:
+© 2025 Palantr Technologies Inc.
+Business Update
+Q1
+High-stakes problems. High-impact solutions.
+Across industries, more US companies are naming Palantr in their vision for what’s next.
+R1 RCM is partnering with Palantr 
+to launch an advanced AI lab 
+designed to transform healthcare 
+workﬂows and improve unit 
+economics by up to 50%.
+Cit’s latest earnings release 
+highlighted how a new partnership 
+with Palantr will improve client 
+experience and operatonal agility 
+in their Wealth division.
+AIG expects their adopton of an 
+AI-powered underwritng soluton 
+leveraging AIP to double its 5-year 
+revenue CAGR from 10% to 20%.
+SOURCE: AIG INVESTOR DAY (3/31/2025)
+SOURCE: CITIGROUP (4/15/2025)
+Watch the interview
+
+Structured Layout:
+© 2025 Palantr Technologies Inc.
+
+
+Business Update
+Q1
+
+
+High-stakes problems. High-impact solutions.
+
+
+Across industries, more US companies are naming Palantr in their vision for what’s next.
+
+
+R1 RCM is partnering with Palantr 
+to launch an advanced AI lab 
+designed to transform healthcare 
+workﬂows and improve unit 
+economics by up to 50%.
+
+
+Cit’s latest earnings release 
+highlighted how a new partnership 
+with Palantr will improve client 
+experience and operatonal agility 
+in their Wealth division.
+
+
+AIG expects their adopton of an 
+AI-powered underwritng soluton 
+leveraging AIP to double its 5-year 
+revenue CAGR from 10% to 20%.
+
+
+SOURCE: AIG INVESTOR DAY (3/31/2025)
+SOURCE: CITIGROUP (4/15/2025)
+Watch the interview
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 10 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 14 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_014.png
+Text Content:
+US commercial contnues to accelerate in Q1 2025 alongside AIP revoluton
+Financials
+Q1
+2x Y/Y
+US Commercial Deals Closed of $1M or Greater
+US Commercial Total Contract Value
+$810M
+US Commercial Total Contract Value
++183% Y/Y
++71% Y/Y
+US Commercial Revenue
++19% Q/Q
+US Commercial Revenue
++65% Y/Y
+US Commercial Customer Count
++13% Q/Q
+US Commercial Customer Count
++127% Y/Y
+US Commercial Remaining Deal Value
++30% Q/Q
+US Commercial Remaining Deal Value
+© 2025 Palantr Technologies Inc.
+We deﬁne a customer as an organizaton from which we have recognized revenue during the trailing twelve months period.
+
+Structured Layout:
+US commercial contnues to accelerate in Q1 2025 alongside AIP revoluton
+
+
+Financials
+Q1
+
+
+2x Y/Y
+
+
+US Commercial Deals Closed of $1M or Greater
+
+
+US Commercial Total Contract Value
+
+
+$810M
+
+
+US Commercial Total Contract Value
++183% Y/Y
+
+
++71% Y/Y
+
+
+US Commercial Revenue
++19% Q/Q
+
+
+US Commercial Revenue
+
+
++65% Y/Y
+
+
+US Commercial Customer Count
++13% Q/Q
+
+
+US Commercial Customer Count
+
+
++127% Y/Y
+
+
+US Commercial Remaining Deal Value
++30% Q/Q
+
+
+US Commercial Remaining Deal Value
+
+
+© 2025 Palantr Technologies Inc.
+We deﬁne a customer as an organizaton from which we have recognized revenue during the trailing twelve months period.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 14 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 27 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_027.png
+Text Content:
+We ended Q1 2025 with    
+in cash, cash equivalents, 
+and US Treasury securites 
+and no debt.
+$100M
+$200M
+$300M
+$400M
+Cash from Operatons and 
+Adjusted Free Cash Flow
+Financials
+Q1
+$5.4B
+CASH FROM OPERATIONS
+ADJUSTED FREE CASH FLOW
+$310M
+$130M
+35% MARGIN
+20% MARGIN
+23% MARGIN
+42% MARGIN
+$370M
+$149M
+Q1 2024
+Q1 2024
+Q1 2025
+Q1 2025
+$—M
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+We ended Q1 2025 with    
+
+
+in cash, cash equivalents, 
+and US Treasury securites 
+and no debt.
+
+
+$100M
+
+
+$200M
+
+
+$300M
+
+
+$400M
+
+
+Cash from Operatons and 
+Adjusted Free Cash Flow
+
+
+Financials
+Q1
+
+
+$5.4B
+
+
+CASH FROM OPERATIONS
+ADJUSTED FREE CASH FLOW
+
+
+$310M
+
+
+$130M
+
+
+35% MARGIN
+
+
+20% MARGIN
+
+
+23% MARGIN
+
+
+42% MARGIN
+
+
+$370M
+
+
+$149M
+
+
+Q1 2024
+Q1 2024
+Q1 2025
+Q1 2025
+
+
+$—M
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 27 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 26 ---
+Source Image: document_images/nvidia_10q_page_026.png
+Text Content:
+Reportable segment operating income – The year over year increase in Compute & Networking segment operating income in the first quarter of fiscal year 2026
+was driven by growth in revenue, partially offset by a $4.5 billion charge associated with H20 excess inventory and purchase obligations. The year over year
+increase in Graphics segment operating income in the first quarter of fiscal year 2026 was driven by growth in revenue.
+All Other operating loss – The year over year increase in the first quarter of fiscal year 2026 was due to an increase in stock-based compensation expense
+reflecting employee growth.
+Concentration of Revenue
+We refer to customers who purchase products directly from NVIDIA as direct customers, such as add-in board manufacturers, distributors, ODMs, OEMs, and
+system integrators. We have certain customers that may purchase products directly from NVIDIA and may use either internal resources or third-party system
+integrators to complete their build. We also have indirect customers, who purchase products through our direct customers; indirect customers include CSPs,
+consumer internet companies, enterprises, and public sector entities.
+Direct Customers – Sales to one direct customer, Customer A, represented 16% of total revenue and sales to a second direct customer, Customer B,
+represented 14% of total revenue for the first quarter of fiscal year 2026, both of which were attributable to the Compute & Networking segment. Sales to two
+direct customers represented 11% and 13% of total revenue for the first quarter of fiscal year 2025, both of which were attributable to the Compute & Networking
+segment.
+Indirect Customers – Indirect customer revenue is an estimation based upon multiple factors including customer purchase order information, product
+specifications, internal sales data, and other sources. Actual indirect customer revenue may differ from our estimates. For the first quarter of fiscal year 2026, two
+indirect customers which primarily purchase our products through system integrators and distributors, including through Direct Customers A and B, are estimated
+to represent 10% or more of total revenue, attributable to the Compute & Networking segment.
+We estimate that in the first quarter of fiscal year 2026, an AI research and deployment company contributed to a meaningful amount of our revenue, through
+one of the above indirect customers and through other indirect customers that provide cloud services.
+We have experienced periods where we receive a significant amount of our revenue from a limited number of customers, and this trend may continue.
+Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location.
+Revenue from sales to customers outside of the United States accounted for 53% and 48% of total revenue for the first quarter of fiscal years 2026 and 2025,
+respectively.
+Gross Profit and Gross Margin
+Gross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication,
+assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test
+yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related
+intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to
+personnel associated with manufacturing operations.
+Gross margins decreased to 60.5% for the first quarter of fiscal year 2026 compared to 78.4% for the first quarter of fiscal year 2025, primarily due to a $4.5
+billion charge associated with H20 excess inventory and purchase obligations and the initial ramp of more sophisticated systems within Data Center.
+Provisions for inventory and excess inventory purchase obligations totaled $5.3 billion, including $4.5 billion associated with H20 excess inventory and purchase
+obligations, and $393 million for the first quarter of fiscal years 2026 and 2025, respectively. Sales of previously reserved inventory and settlements of excess
+inventory purchase obligations resulted in a provision release of $436 million and $114 million for the first quarter of fiscal years 2026 and 2025, respectively.
+The net effect of provisions for inventory and excess inventory purchase obligations on our gross margin was an unfavorable impact of 11.0% and 1.1% in the
+first quarter of fiscal years 2026 and 2025, respectively.
+26
+
+Structured Layout:
+Reportable segment operating income – The year over year increase in Compute & Networking segment operating income in the first quarter of fiscal year 2026
+was driven by growth in revenue, partially offset by a $4.5 billion charge associated with H20 excess inventory and purchase obligations. The year over year
+increase in Graphics segment operating income in the first quarter of fiscal year 2026 was driven by growth in revenue.
+
+
+All Other operating loss – The year over year increase in the first quarter of fiscal year 2026 was due to an increase in stock-based compensation expense
+reflecting employee growth.
+
+
+Concentration of Revenue
+
+
+We refer to customers who purchase products directly from NVIDIA as direct customers, such as add-in board manufacturers, distributors, ODMs, OEMs, and
+system integrators. We have certain customers that may purchase products directly from NVIDIA and may use either internal resources or third-party system
+integrators to complete their build. We also have indirect customers, who purchase products through our direct customers; indirect customers include CSPs,
+consumer internet companies, enterprises, and public sector entities.
+
+
+Direct Customers – Sales to one direct customer, Customer A, represented 16% of total revenue and sales to a second direct customer, Customer B,
+represented 14% of total revenue for the first quarter of fiscal year 2026, both of which were attributable to the Compute & Networking segment. Sales to two
+direct customers represented 11% and 13% of total revenue for the first quarter of fiscal year 2025, both of which were attributable to the Compute & Networking
+segment.
+
+
+Indirect Customers – Indirect customer revenue is an estimation based upon multiple factors including customer purchase order information, product
+specifications, internal sales data, and other sources. Actual indirect customer revenue may differ from our estimates. For the first quarter of fiscal year 2026, two
+indirect customers which primarily purchase our products through system integrators and distributors, including through Direct Customers A and B, are estimated
+to represent 10% or more of total revenue, attributable to the Compute & Networking segment.
+
+
+We estimate that in the first quarter of fiscal year 2026, an AI research and deployment company contributed to a meaningful amount of our revenue, through
+one of the above indirect customers and through other indirect customers that provide cloud services.
+
+
+We have experienced periods where we receive a significant amount of our revenue from a limited number of customers, and this trend may continue.
+
+
+Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location.
+Revenue from sales to customers outside of the United States accounted for 53% and 48% of total revenue for the first quarter of fiscal years 2026 and 2025,
+respectively.
+
+
+Gross Profit and Gross Margin
+
+
+Gross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication,
+assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test
+yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related
+intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to
+personnel associated with manufacturing operations.
+
+
+Gross margins decreased to 60.5% for the first quarter of fiscal year 2026 compared to 78.4% for the first quarter of fiscal year 2025, primarily due to a $4.5
+billion charge associated with H20 excess inventory and purchase obligations and the initial ramp of more sophisticated systems within Data Center.
+
+
+Provisions for inventory and excess inventory purchase obligations totaled $5.3 billion, including $4.5 billion associated with H20 excess inventory and purchase
+obligations, and $393 million for the first quarter of fiscal years 2026 and 2025, respectively. Sales of previously reserved inventory and settlements of excess
+inventory purchase obligations resulted in a provision release of $436 million and $114 million for the first quarter of fiscal years 2026 and 2025, respectively.
+The net effect of provisions for inventory and excess inventory purchase obligations on our gross margin was an unfavorable impact of 11.0% and 1.1% in the
+first quarter of fiscal years 2026 and 2025, respectively.
+
+
+26
+--- END CONTEXT: nvidia_10q.pdf, Page 26 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 24 ---
+Source Image: document_images/nvidia_10q_page_024.png
+Text Content:
+On April 9, 2025, we were informed by the USG that a license is required for exports of our H20 products into the China market. As a result of these new
+requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 excess inventory and purchase obligations as the
+demand for H20 products diminished. The $4.5 billion charge was less than what we initially anticipated as we were able to re-use certain materials. Sales of our
+H20 products were $4.6 billion for the first quarter of fiscal year 2026 prior to the new export licensing requirements. The H20 export licensing requirements have
+impacted our current revenue and will also negatively affect our future revenue.
+Revenue was $44.1 billion, up 69% from a year ago and up 12% sequentially.
+Data Center revenue was $39.1 billion, up 73% from a year ago and up 10% sequentially. The strong year-on-year and sequential growth was driven by demand
+for our accelerated computing platform used for large language models, recommendation engines, and generative and agentic AI applications. We saw our
+Blackwell architecture ramp expand to all customer categories, while large cloud service providers remained our largest at just under 50% of Data Center
+revenue. Data Center compute revenue was $34.2 billion, up 76% from a year ago and up 5% sequentially. Networking revenue was $5.0 billion, up 56% from a
+year ago and up 64% sequentially, driven by the growth of NVLink compute fabric in our GB200 systems and continued adoption of Ethernet for AI solutions at
+cloud service providers and consumer internet companies.
+Gaming revenue was up 42% from a year ago and up 48% sequentially, driven by sales of our Blackwell architecture.
+Professional Visualization revenue was up 19% from a year ago and flat sequentially. The increase from a year ago was driven by broader adoption of Ada RTX
+workstation GPUs, addressing workflows in AI acceleration, real-time graphics rendering and data simulation.
+Automotive revenue was up 72% from a year ago and down 1% sequentially. The increase from a year ago was driven by sales of our self-driving platforms.
+Gross margin decreased from a year ago and sequentially, primarily due to a $4.5 billion charge associated with H20 excess inventory and purchase obligations
+and the initial ramp of more sophisticated systems within Data Center.
+Operating expenses were up 44% from a year ago and up 7% sequentially. The year-on-year increase was primarily driven by higher compensation and benefits
+expenses due to employee growth and compensation increases, and compute, infrastructure and engineering development costs for new product introductions.
+The sequential increase was primarily driven by higher compensation and benefits due to compensation increases and employee growth.
+Financial Information by Business Segment and Geographic Data
+Refer to Note 13 of the Notes to the Condensed Consolidated Financial Statements for disclosure regarding segment information.
+Critical Accounting Policies and Estimates
+Refer to Part II, Item 7, "Critical Accounting Policies and Estimates" of our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. There have
+been no material changes to our Critical Accounting Policies and Estimates.
+24
+
+Structured Layout:
+On April 9, 2025, we were informed by the USG that a license is required for exports of our H20 products into the China market. As a result of these new
+requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 excess inventory and purchase obligations as the
+demand for H20 products diminished. The $4.5 billion charge was less than what we initially anticipated as we were able to re-use certain materials. Sales of our
+H20 products were $4.6 billion for the first quarter of fiscal year 2026 prior to the new export licensing requirements. The H20 export licensing requirements have
+impacted our current revenue and will also negatively affect our future revenue.
+
+
+Revenue was $44.1 billion, up 69% from a year ago and up 12% sequentially.
+
+
+Data Center revenue was $39.1 billion, up 73% from a year ago and up 10% sequentially. The strong year-on-year and sequential growth was driven by demand
+for our accelerated computing platform used for large language models, recommendation engines, and generative and agentic AI applications. We saw our
+Blackwell architecture ramp expand to all customer categories, while large cloud service providers remained our largest at just under 50% of Data Center
+revenue. Data Center compute revenue was $34.2 billion, up 76% from a year ago and up 5% sequentially. Networking revenue was $5.0 billion, up 56% from a
+year ago and up 64% sequentially, driven by the growth of NVLink compute fabric in our GB200 systems and continued adoption of Ethernet for AI solutions at
+cloud service providers and consumer internet companies.
+
+
+Gaming revenue was up 42% from a year ago and up 48% sequentially, driven by sales of our Blackwell architecture.
+
+
+Professional Visualization revenue was up 19% from a year ago and flat sequentially. The increase from a year ago was driven by broader adoption of Ada RTX
+workstation GPUs, addressing workflows in AI acceleration, real-time graphics rendering and data simulation.
+
+
+Automotive revenue was up 72% from a year ago and down 1% sequentially. The increase from a year ago was driven by sales of our self-driving platforms.
+
+
+Gross margin decreased from a year ago and sequentially, primarily due to a $4.5 billion charge associated with H20 excess inventory and purchase obligations
+and the initial ramp of more sophisticated systems within Data Center.
+
+
+Operating expenses were up 44% from a year ago and up 7% sequentially. The year-on-year increase was primarily driven by higher compensation and benefits
+expenses due to employee growth and compensation increases, and compute, infrastructure and engineering development costs for new product introductions.
+The sequential increase was primarily driven by higher compensation and benefits due to compensation increases and employee growth.
+
+
+Financial Information by Business Segment and Geographic Data
+
+
+Refer to Note 13 of the Notes to the Condensed Consolidated Financial Statements for disclosure regarding segment information.
+
+
+Critical Accounting Policies and Estimates
+
+
+Refer to Part II, Item 7, "Critical Accounting Policies and Estimates" of our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. There have
+been no material changes to our Critical Accounting Policies and Estimates.
+
+
+24
+--- END CONTEXT: nvidia_10q.pdf, Page 24 --- images: 

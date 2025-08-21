@@ -1,0 +1,2696 @@
+Question: According to Palantir’s Q1 2025 investor presentation, under the false premise that the Rule of 40 score of 83% was derived by adding the adjusted free cash flow margin to the US government revenue quarter-over-quarter growth rate, what were each of those two percentages, what was the quarter-end balance in cash, cash equivalents, and US Treasury securities, how many deals of at least $1 million closed in the quarter, and what was the US Commercial Customer Count for the trailing twelve months ended March 31, 2025?
+
+Attempt 1 Query: According to Palantir’s Q1 2025 investor presentation, under the false premise that the Rule of 40 score of 83% was derived by adding the adjusted free cash flow margin to the US government revenue quarter-over-quarter growth rate, what were each of those two percentages, what was the quarter-end balance in cash, cash equivalents, and US Treasury securities, how many deals of at least $1 million closed in the quarter, and what was the US Commercial Customer Count for the trailing twelve months ended March 31, 2025?
+
+Image Paths:
+['document_images/palantir_q1_investor_presentation_page_026.png', 'document_images/palantir_q1_investor_presentation_page_024.png', 'document_images/palantir_q1_investor_presentation_page_003.png'] 
+
+ Context:
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 26 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_026.png
+Text Content:
+During Q1 2025, we closed 
+of at least $1 million.
+139 deals 
+51
+of which were at least $5 million.
+31
+of which were at least $10 million.
+Financials
+Q1
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+During Q1 2025, we closed 
+
+
+of at least $1 million.
+139 deals 
+
+
+51
+of which were at least $5 million.
+31
+of which were at least $10 million.
+
+
+Financials
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 26 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 24 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_024.png
+Text Content:
+Financials
+Q1
+US Commercial Customer Count
+150
+250
+300
+500
+450
+350
+400
+200
+100
+50
+432
+TTM ENDED
+MAR 31, 2025
+© 2025 Palantr Technologies Inc.
+TTM ENDED
+JUN 30, 2024
+TTM ENDED
+MAR 31, 2024
+262
+295
+321
+382
++13%
++9%
++19%
+TTM ENDED
+SEP 30, 2024
+TTM ENDED
+DEC 31, 2024
++65% Y/Y
++13%
+
+Structured Layout:
+Financials
+Q1
+
+
+US Commercial Customer Count
+
+
+150
+
+
+250
+
+
+300
+
+
+500
+
+
+450
+
+
+350
+
+
+400
+
+
+200
+
+
+100
+
+
+50
+
+
+432
+
+
+TTM ENDED
+MAR 31, 2025
+
+
+© 2025 Palantr Technologies Inc.
+
+
+TTM ENDED
+JUN 30, 2024
+TTM ENDED
+MAR 31, 2024
+
+
+262
+
+
+295
+
+
+321
+
+
+382
+
+
++13%
+
+
++9%
+
+
++19%
+
+
+TTM ENDED
+SEP 30, 2024
+TTM ENDED
+DEC 31, 2024
+
+
++65% Y/Y
+
+
++13%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 24 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 3 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_003.png
+Text Content:
+Adjusted free cash ﬂow of $370 million; 42% margin
+Business Update
+Q1
+© 2025 Palantr Technologies Inc.
+Q1 2025 Highlights
+The term “Strategic Commercial Contracts” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025. Rule of 40 refers to the sum of our revenue growth rate year-over-year and our adjusted operatng margin. The value of deals closed reﬂects the total contract value of contracts that have been entered 
+into with, or awarded by, our government and commercial customers and includes existng contractual obligatons and unexercised contract optons available to those customers. Adjusted free cash ﬂow and adjusted free cash ﬂow margin exclude employer payroll taxes related to stock-based compensaton and 
+purchases of property and equipment. Adjusted operatng income and adjusted operatng margin excludes stock-based compensaton expense and related employer payroll taxes. Total contract value (“TCV”) is the total potental lifetme value of contracts entered into with, or awarded by, our customers at the tme of 
+contract executon and remaining deal value (“RDV”) is the total remaining value of contracts as of the end of the reportng period. Except as noted below, TCV and RDV each presume the exercise of all contract optons available to our customers and no terminaton of contracts. However, the majority of our contracts are 
+subject to terminaton provisions, including for convenience, and there can be no guarantee that contracts are not terminated or that contract optons will be exercised. Further, RDV may exclude all or some porton of the value of certain commercial contracts as a result of our ongoing assessments of customers’ ﬁnancial 
+conditon, including the consideraton of such customers’ ability and intenton to pay, and whether such contracts contnue to meet the criteria for revenue recogniton, among other factors. Adjusted EPS excludes stock-based compensaton expense, related employer payroll taxes, and income tax eﬀects and adjustments. 
+Please see the appendix for reconciliatons of these and other non-GAAP ﬁnancial measures to the most directly comparable GAAP measures.
+US commercial revenue grew +71% Y/Y and +19% Q/Q to $255 million
+US revenue grew +55% Y/Y and +13% Q/Q to $628 million
+US commercial remaining deal value (“RDV”) grew +127% Y/Y and +30% Q/Q to $2.3 billion
+Adjusted operatng income of $391 million; 44% margin
+US government revenue grew +45% Y/Y and +9% Q/Q to $373 million
+Closed 139 deals of at least $1 million, 51 deals of at least $5 million, and 31 deals of at least $10 million
+Revenue grew +39% Y/Y and +7% Q/Q to $884 million; +44% Y/Y and +7% Q/Q excluding Strategic Commercial Contracts
+Highest ever quarter of US commercial total contract value (“TCV”) of $810 million; +183% Y/Y
+Adjusted EPS of $0.13
+Rule of 40 score of 83%
+
+Structured Layout:
+Adjusted free cash ﬂow of $370 million; 42% margin
+
+
+Business Update
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q1 2025 Highlights
+
+
+The term “Strategic Commercial Contracts” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025. Rule of 40 refers to the sum of our revenue growth rate year-over-year and our adjusted operatng margin. The value of deals closed reﬂects the total contract value of contracts that have been entered 
+into with, or awarded by, our government and commercial customers and includes existng contractual obligatons and unexercised contract optons available to those customers. Adjusted free cash ﬂow and adjusted free cash ﬂow margin exclude employer payroll taxes related to stock-based compensaton and 
+purchases of property and equipment. Adjusted operatng income and adjusted operatng margin excludes stock-based compensaton expense and related employer payroll taxes. Total contract value (“TCV”) is the total potental lifetme value of contracts entered into with, or awarded by, our customers at the tme of 
+contract executon and remaining deal value (“RDV”) is the total remaining value of contracts as of the end of the reportng period. Except as noted below, TCV and RDV each presume the exercise of all contract optons available to our customers and no terminaton of contracts. However, the majority of our contracts are 
+subject to terminaton provisions, including for convenience, and there can be no guarantee that contracts are not terminated or that contract optons will be exercised. Further, RDV may exclude all or some porton of the value of certain commercial contracts as a result of our ongoing assessments of customers’ ﬁnancial 
+conditon, including the consideraton of such customers’ ability and intenton to pay, and whether such contracts contnue to meet the criteria for revenue recogniton, among other factors. Adjusted EPS excludes stock-based compensaton expense, related employer payroll taxes, and income tax eﬀects and adjustments. 
+Please see the appendix for reconciliatons of these and other non-GAAP ﬁnancial measures to the most directly comparable GAAP measures.
+
+
+US commercial revenue grew +71% Y/Y and +19% Q/Q to $255 million
+
+
+US revenue grew +55% Y/Y and +13% Q/Q to $628 million
+
+
+US commercial remaining deal value (“RDV”) grew +127% Y/Y and +30% Q/Q to $2.3 billion
+
+
+Adjusted operatng income of $391 million; 44% margin
+
+
+US government revenue grew +45% Y/Y and +9% Q/Q to $373 million
+
+
+Closed 139 deals of at least $1 million, 51 deals of at least $5 million, and 31 deals of at least $10 million
+
+
+Revenue grew +39% Y/Y and +7% Q/Q to $884 million; +44% Y/Y and +7% Q/Q excluding Strategic Commercial Contracts
+
+
+Highest ever quarter of US commercial total contract value (“TCV”) of $810 million; +183% Y/Y
+
+
+Adjusted EPS of $0.13
+
+
+Rule of 40 score of 83%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 3 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 27 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_027.png
+Text Content:
+We ended Q1 2025 with    
+in cash, cash equivalents, 
+and US Treasury securites 
+and no debt.
+$100M
+$200M
+$300M
+$400M
+Cash from Operatons and 
+Adjusted Free Cash Flow
+Financials
+Q1
+$5.4B
+CASH FROM OPERATIONS
+ADJUSTED FREE CASH FLOW
+$310M
+$130M
+35% MARGIN
+20% MARGIN
+23% MARGIN
+42% MARGIN
+$370M
+$149M
+Q1 2024
+Q1 2024
+Q1 2025
+Q1 2025
+$—M
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+We ended Q1 2025 with    
+
+
+in cash, cash equivalents, 
+and US Treasury securites 
+and no debt.
+
+
+$100M
+
+
+$200M
+
+
+$300M
+
+
+$400M
+
+
+Cash from Operatons and 
+Adjusted Free Cash Flow
+
+
+Financials
+Q1
+
+
+$5.4B
+
+
+CASH FROM OPERATIONS
+ADJUSTED FREE CASH FLOW
+
+
+$310M
+
+
+$130M
+
+
+35% MARGIN
+
+
+20% MARGIN
+
+
+23% MARGIN
+
+
+42% MARGIN
+
+
+$370M
+
+
+$149M
+
+
+Q1 2024
+Q1 2024
+Q1 2025
+Q1 2025
+
+
+$—M
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 27 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 14 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_014.png
+Text Content:
+US commercial contnues to accelerate in Q1 2025 alongside AIP revoluton
+Financials
+Q1
+2x Y/Y
+US Commercial Deals Closed of $1M or Greater
+US Commercial Total Contract Value
+$810M
+US Commercial Total Contract Value
++183% Y/Y
++71% Y/Y
+US Commercial Revenue
++19% Q/Q
+US Commercial Revenue
++65% Y/Y
+US Commercial Customer Count
++13% Q/Q
+US Commercial Customer Count
++127% Y/Y
+US Commercial Remaining Deal Value
++30% Q/Q
+US Commercial Remaining Deal Value
+© 2025 Palantr Technologies Inc.
+We deﬁne a customer as an organizaton from which we have recognized revenue during the trailing twelve months period.
+
+Structured Layout:
+US commercial contnues to accelerate in Q1 2025 alongside AIP revoluton
+
+
+Financials
+Q1
+
+
+2x Y/Y
+
+
+US Commercial Deals Closed of $1M or Greater
+
+
+US Commercial Total Contract Value
+
+
+$810M
+
+
+US Commercial Total Contract Value
++183% Y/Y
+
+
++71% Y/Y
+
+
+US Commercial Revenue
++19% Q/Q
+
+
+US Commercial Revenue
+
+
++65% Y/Y
+
+
+US Commercial Customer Count
++13% Q/Q
+
+
+US Commercial Customer Count
+
+
++127% Y/Y
+
+
+US Commercial Remaining Deal Value
++30% Q/Q
+
+
+US Commercial Remaining Deal Value
+
+
+© 2025 Palantr Technologies Inc.
+We deﬁne a customer as an organizaton from which we have recognized revenue during the trailing twelve months period.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 14 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 15 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_015.png
+Text Content:
+Our Q1 2025 GAAP earnings per 
+share was $0.08.
+Financials
+Q1
+$50.0M
+$100.0M
+$150.0M
+$200.0M
+$250.0M
+$—M
+Q1 2025
+GAAP Net Income
+Net income when excluding one-tme SAR-related expenses excludes the one-tme accelerated stock-based 
+compensaton expense, employer payroll taxes, and income tax eﬀects and adjustments related to our Market-Vestng 
+SARs. The term “Market-Vestng SARs” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025.
+© 2025 Palantr Technologies Inc.
+$105.5M
+$134.1M
+$79.0M
+$143.5M
+Net  income when
+excluding one-time
+SAR-related expenses
+$164.7M
+$214.0M
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+Structured Layout:
+Our Q1 2025 GAAP earnings per 
+share was $0.08.
+
+
+Financials
+Q1
+
+
+$50.0M
+
+
+$100.0M
+
+
+$150.0M
+
+
+$200.0M
+
+
+$250.0M
+
+
+$—M
+
+
+Q1 2025
+
+
+GAAP Net Income
+
+
+Net income when excluding one-tme SAR-related expenses excludes the one-tme accelerated stock-based 
+compensaton expense, employer payroll taxes, and income tax eﬀects and adjustments related to our Market-Vestng 
+SARs. The term “Market-Vestng SARs” is as deﬁned in our Annual Report on Form 10-K ﬁled on February 18, 2025.
+© 2025 Palantr Technologies Inc.
+
+
+$105.5M
+
+
+$134.1M
+
+
+$79.0M
+
+
+$143.5M
+
+
+Net  income when
+excluding one-time
+SAR-related expenses
+
+
+$164.7M
+
+
+$214.0M
+
+
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 15 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 17 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_017.png
+Text Content:
+Financials
+Q1
+Rule of 40
+50%
+40%
+30%
+Q1 2025
+60%
+70%
+90%
+80%
+//
+© 2025 Palantr Technologies Inc.
+Q2 2023
+Q3 2023
+Q4 2023
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+38%
+46%
+54%
+57%
+64%
+68%
+81%
+83%
+
+Structured Layout:
+Financials
+Q1
+
+
+Rule of 40
+
+
+50%
+
+
+40%
+
+
+30%
+
+
+Q1 2025
+
+
+60%
+
+
+70%
+
+
+90%
+
+
+80%
+
+
+//
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q2 2023
+Q3 2023
+Q4 2023
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+
+38%
+
+
+46%
+
+
+54%
+57%
+
+
+64%
+
+
+68%
+
+
+81%
+
+
+83%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 17 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 28 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_028.png
+Text Content:
+Q2 2025
+Adjusted income from operatons of between
+$401 million — $405 million.
+GAAP operatng income and net income in each 
+quarter of this year.
+Revenue of between
+$934 million — $938 million.
+For second quarter 2025, we expect: 
+For full year 2025, we expect: 
+FY 2025
+Adjusted income from operatons of between
+$1.711 billion — $1.723 billion.
+Adjusted free cash ﬂow of between
+$1.6 billion — $1.8 billion. 
+Revenue of between
+$3.890 billion — $3.902 billion.
+US commercial revenue in excess of
+$1.178 billion, representng a growth 
+rate of at least 68%.
+Financials
+Q1
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Q2 2025
+
+
+Adjusted income from operatons of between
+$401 million — $405 million.
+
+
+GAAP operatng income and net income in each 
+quarter of this year.
+
+
+Revenue of between
+$934 million — $938 million.
+
+
+For second quarter 2025, we expect: 
+For full year 2025, we expect: 
+
+
+FY 2025
+
+
+Adjusted income from operatons of between
+$1.711 billion — $1.723 billion.
+
+
+Adjusted free cash ﬂow of between
+$1.6 billion — $1.8 billion. 
+
+
+Revenue of between
+$3.890 billion — $3.902 billion.
+
+
+US commercial revenue in excess of
+$1.178 billion, representng a growth 
+rate of at least 68%.
+
+
+Financials
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 28 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 10 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_010.png
+Text Content:
+© 2025 Palantr Technologies Inc.
+Business Update
+Q1
+High-stakes problems. High-impact solutions.
+Across industries, more US companies are naming Palantr in their vision for what’s next.
+R1 RCM is partnering with Palantr 
+to launch an advanced AI lab 
+designed to transform healthcare 
+workﬂows and improve unit 
+economics by up to 50%.
+Cit’s latest earnings release 
+highlighted how a new partnership 
+with Palantr will improve client 
+experience and operatonal agility 
+in their Wealth division.
+AIG expects their adopton of an 
+AI-powered underwritng soluton 
+leveraging AIP to double its 5-year 
+revenue CAGR from 10% to 20%.
+SOURCE: AIG INVESTOR DAY (3/31/2025)
+SOURCE: CITIGROUP (4/15/2025)
+Watch the interview
+
+Structured Layout:
+© 2025 Palantr Technologies Inc.
+
+
+Business Update
+Q1
+
+
+High-stakes problems. High-impact solutions.
+
+
+Across industries, more US companies are naming Palantr in their vision for what’s next.
+
+
+R1 RCM is partnering with Palantr 
+to launch an advanced AI lab 
+designed to transform healthcare 
+workﬂows and improve unit 
+economics by up to 50%.
+
+
+Cit’s latest earnings release 
+highlighted how a new partnership 
+with Palantr will improve client 
+experience and operatonal agility 
+in their Wealth division.
+
+
+AIG expects their adopton of an 
+AI-powered underwritng soluton 
+leveraging AIP to double its 5-year 
+revenue CAGR from 10% to 20%.
+
+
+SOURCE: AIG INVESTOR DAY (3/31/2025)
+SOURCE: CITIGROUP (4/15/2025)
+Watch the interview
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 10 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 23 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_023.png
+Text Content:
+We contnue to invest aggressively 
+in AIP and the US while driving 
+operatng leverage at scale.
+Q1 2025 adjusted operatng income was 
+$391M, representng a margin of 44%.
+ADJUSTED OPERATING MARGIN
+$300M
+$450M
+$400M
+$350M
+$250M
+$200M
+$100M
+$150M
+$50M
+Q1 2025
+$391M
+44%
+$—M
+Financials
+Q1
+© 2025 Palantr Technologies Inc.
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+$254M
+37%
+$276M
+$373M
+38%
+45%
+$226M
+36%
+
+Structured Layout:
+We contnue to invest aggressively 
+in AIP and the US while driving 
+operatng leverage at scale.
+
+
+Q1 2025 adjusted operatng income was 
+$391M, representng a margin of 44%.
+
+
+ADJUSTED OPERATING MARGIN
+
+
+$300M
+
+
+$450M
+
+
+$400M
+
+
+$350M
+
+
+$250M
+
+
+$200M
+
+
+$100M
+
+
+$150M
+
+
+$50M
+
+
+Q1 2025
+
+
+$391M
+
+
+44%
+
+
+$—M
+
+
+Financials
+Q1
+
+
+© 2025 Palantr Technologies Inc.
+
+
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+
+$254M
+
+
+37%
+
+
+$276M
+
+
+$373M
+
+
+38%
+
+
+45%
+
+
+$226M
+
+
+36%
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 23 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 16 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_016.png
+Text Content:
+Our Q1 2025 GAAP operatng 
+margin was 20%.
+Financials
+Q1
+$—M
+GAAP Operatng Income
+$50.0M
+$100.0M
+$150.0M
+$200.0M
+$250.0M
+Operatng income when excluding one-tme SAR-related expenses excludes the one-tme accelerated 
+stock-based compensaton expense and employer payroll taxes related to our Market-Vestng SARs.
+© 2025 Palantr Technologies Inc.
+$80.9M
+$105.3M
+$11.0M
+$113.1M
+$142.3M
+$176.0M
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+Operating income when
+excluding one-time
+SAR-related expenses
+Q1 2025
+
+Structured Layout:
+Our Q1 2025 GAAP operatng 
+margin was 20%.
+
+
+Financials
+Q1
+
+
+$—M
+
+
+GAAP Operatng Income
+
+
+$50.0M
+
+
+$100.0M
+
+
+$150.0M
+
+
+$200.0M
+
+
+$250.0M
+
+
+Operatng income when excluding one-tme SAR-related expenses excludes the one-tme accelerated 
+stock-based compensaton expense and employer payroll taxes related to our Market-Vestng SARs.
+© 2025 Palantr Technologies Inc.
+
+
+$80.9M
+
+
+$105.3M
+
+
+$11.0M
+
+
+$113.1M
+
+
+$142.3M
+
+
+$176.0M
+
+
+Q1 2024
+Q2 2024
+Q3 2024
+Q4 2024
+
+
+Operating income when
+excluding one-time
+SAR-related expenses
+
+
+Q1 2025
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 16 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 18 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_018.png
+Text Content:
+Financials
+Q1
+Q1 2024
+Q1 2025
+US Revenue Growth
+$300M
+$200M
+$100M
+$628M
+$406M
++55%
+$400M
+$500M
+$700M
+$600M
+US revenue grew 55% Y/Y and 13% 
+Q/Q, driven by acceleraton in US 
+commercial and US government.
+© 2025 Palantr Technologies Inc.
+$—M
+
+Structured Layout:
+Financials
+Q1
+
+
+Q1 2024
+Q1 2025
+
+
+US Revenue Growth
+
+
+$300M
+
+
+$200M
+
+
+$100M
+
+
+$628M
+
+
+$406M
+
+
++55%
+
+
+$400M
+
+
+$500M
+
+
+$700M
+
+
+$600M
+
+
+US revenue grew 55% Y/Y and 13% 
+Q/Q, driven by acceleraton in US 
+commercial and US government.
+
+
+© 2025 Palantr Technologies Inc.
+
+
+$—M
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 18 ---
+
+--- START CONTEXT: palantir_q1_investor_presentation.pdf, Page 32 ---
+Source Image: document_images/palantir_q1_investor_presentation_page_032.png
+Text Content:
+Reconciliation of Rule of 40
+Year-Over-Year Revenue Growth
+Adjusted Operating Margin
+Rule of 40
+Q1 2024
+21%
+36%
+57%
+Q2 2024
+27%
+37%
+64%
+Q3 2024
+30%
+38%
+68%
+Q4 2024
+36%
+45%
+81%
+Q1 2025
+39%
+44%
+83%
+Q4 2023
+20%
+34%
+54%
+Q3 2023
+17%
+29%
+46%
+Q2 2023
+13%
+25%
+38%
+Appendix
+© 2025 Palantr Technologies Inc.
+
+Structured Layout:
+Reconciliation of Rule of 40
+
+
+Year-Over-Year Revenue Growth
+
+
+Adjusted Operating Margin
+
+
+Rule of 40
+
+
+Q1 2024
+
+
+21%
+
+
+36%
+
+
+57%
+
+
+Q2 2024
+
+
+27%
+
+
+37%
+
+
+64%
+
+
+Q3 2024
+
+
+30%
+
+
+38%
+
+
+68%
+
+
+Q4 2024
+
+
+36%
+
+
+45%
+
+
+81%
+
+
+Q1 2025
+
+
+39%
+
+
+44%
+
+
+83%
+
+
+Q4 2023
+
+
+20%
+
+
+34%
+
+
+54%
+
+
+Q3 2023
+
+
+17%
+
+
+29%
+
+
+46%
+
+
+Q2 2023
+
+
+13%
+
+
+25%
+
+
+38%
+
+
+Appendix
+
+
+© 2025 Palantr Technologies Inc.
+--- END CONTEXT: palantir_q1_investor_presentation.pdf, Page 32 ---
+
+--- START CONTEXT: jpm_midyear.pdf, Page 13 ---
+Source Image: document_images/jpm_midyear_page_013.png
+Text Content:
+13 
+2025 MID-YEAR OUTLOOK
+SHOULD INVESTORS CHEER OR FEAR TRUMP 2.0?
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Will deregulation make a difference in the real economy? 
+While Congressional legislation will likely be a 
+challenge, deregulation is quietly delivering a positive 
+impact on the banking sector. We think investors may 
+underestimate its benefits. 
+Currently, large U.S. banks have built more than $200 
+billion of excess capital over current requirements. 
+Now that capital rules are likely to be softened, this 
+excess is likely to be deployed across three channels: 
+private sector loan growth, share buybacks and 
+banking sector consolidation. 
+The first channel, private sector loan growth, is a priority 
+of U.S. Treasury Secretary Scott Bessent. Before the 
+tariff shock, commercial and industrial loan demand was 
+inflecting higher, and the Trump administration would 
+like to accelerate the pace. On the buyback front, in Q1, 
+Goldman Sachs announced a share repurchase plan 
+worth 26% of its market capitalization. 
+Additionally, we expect that cost synergies, the benefits 
+of scaling up compliance technology demands and 
+geographic diversification will spur further banking 
+sector consolidation. U.S. regulators recently approved 
+Capital One’s purchase of Discover, which could bode 
+well for bank M&A activity. 
+Bank stocks should benefit over the medium term, and 
+existing preferred equity could be supported by less 
+supply going forward. Indeed, if the Trump administration 
+begins to focus on the pro-growth aspects of its agenda in 
+the second half of 2025, bank stocks may be among the 
+high-profile beneficiaries. 
+LOAN OFFICER SURVEY RESPONSES HIGHLIGHT ACCELERATING 
+COMMERCIAL AND INDUSTRIAL LOAN DEMAND 
+Net % of banks reporting stronger C&I loan demand, 1-year forward 
+C&I loan growth, % 
+80% 
+60 
+40 
+20 
+0 
+-20 
+-40 
+-60 
+-80 
+40% 
+30 
+20 
+10 
+0 
+-10 
+-20 
+-30 
+’90 
+’95 
+’00 
+’05 
+’10 
+’15 
+’20 
+’25
+  Net % of banks reporting stronger C&l loan demand (large & medium ﬁrms) (1-year forward, LHS)
+  Net % of banks reporting stronger C&l loan demand (small ﬁrms) (1-year forward, LHS)
+  C&l loan growth (RHS) 
+Sources: Federal Reserve Board, Haver Analytics. Data as of March 31, 2025.
+
+Structured Layout:
+13 
+2025 MID-YEAR OUTLOOK
+
+
+SHOULD INVESTORS CHEER OR FEAR TRUMP 2.0?
+
+
+Will deregulation make a difference in the real economy? 
+
+
+While Congressional legislation will likely be a 
+challenge, deregulation is quietly delivering a positive 
+impact on the banking sector. We think investors may 
+underestimate its benefits. 
+
+
+Currently, large U.S. banks have built more than $200 
+billion of excess capital over current requirements. 
+Now that capital rules are likely to be softened, this 
+excess is likely to be deployed across three channels: 
+private sector loan growth, share buybacks and 
+banking sector consolidation. 
+
+
+The first channel, private sector loan growth, is a priority 
+of U.S. Treasury Secretary Scott Bessent. Before the 
+tariff shock, commercial and industrial loan demand was 
+inflecting higher, and the Trump administration would 
+like to accelerate the pace. On the buyback front, in Q1, 
+
+
+Goldman Sachs announced a share repurchase plan 
+worth 26% of its market capitalization. 
+
+
+Additionally, we expect that cost synergies, the benefits 
+of scaling up compliance technology demands and 
+geographic diversification will spur further banking 
+sector consolidation. U.S. regulators recently approved 
+Capital One’s purchase of Discover, which could bode 
+well for bank M&A activity. 
+
+
+Bank stocks should benefit over the medium term, and 
+existing preferred equity could be supported by less 
+supply going forward. Indeed, if the Trump administration 
+begins to focus on the pro-growth aspects of its agenda in 
+the second half of 2025, bank stocks may be among the 
+high-profile beneficiaries. 
+
+
+LOAN OFFICER SURVEY RESPONSES HIGHLIGHT ACCELERATING 
+COMMERCIAL AND INDUSTRIAL LOAN DEMAND 
+
+
+Net % of banks reporting stronger C&I loan demand, 1-year forward 
+C&I loan growth, % 
+
+
+80% 
+
+
+60 
+
+
+40 
+
+
+20 
+
+
+0 
+
+
+-20 
+
+
+-40 
+
+
+-60 
+
+
+-80 
+
+
+40% 
+
+
+30 
+
+
+20 
+
+
+10 
+
+
+0 
+
+
+-10 
+
+
+-20 
+
+
+-30 
+’90 
+’95 
+’00 
+’05 
+’10 
+’15 
+’20 
+’25
+
+
+  Net % of banks reporting stronger C&l loan demand (large & medium ﬁrms) (1-year forward, LHS)
+
+
+  Net % of banks reporting stronger C&l loan demand (small ﬁrms) (1-year forward, LHS)
+  C&l loan growth (RHS) 
+
+
+Sources: Federal Reserve Board, Haver Analytics. Data as of March 31, 2025.
+--- END CONTEXT: jpm_midyear.pdf, Page 13 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 28 ---
+Source Image: document_images/nvidia_10q_page_028.png
+Text Content:
+Liquidity and Capital Resources
+ 
+Apr 27, 2025
+Jan 26, 2025
+ 
+(In millions)
+Cash and cash equivalents
+$
+15,234 
+$
+8,589 
+Marketable securities
+38,457 
+34,621 
+Cash, cash equivalents and marketable securities
+$
+53,691 
+$
+43,210 
+ 
+Three Months Ended
+Apr 27, 2025
+Apr 28, 2024
+ 
+(In millions)
+Net cash provided by operating activities
+$
+27,414 
+$
+15,345 
+Net cash used in investing activities
+$
+(5,216)
+$
+(5,693)
+Net cash used in financing activities
+$
+(15,553)
+$
+(9,345)
+Our investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain
+maturity limits on our portfolio.
+Cash provided by operating activities increased in the first quarter of fiscal year 2026 compared to the first quarter of fiscal year 2025, due to higher revenue and
+timing of cash collections.
+Cash used in investing activities decreased in the first quarter of fiscal year 2026 compared to the first quarter of fiscal year 2025, primarily driven by lower net
+purchases of marketable securities, partially offset by higher purchases of property and equipment.
+Cash used in financing activities increased in the first quarter of fiscal year 2026 compared to the first quarter of fiscal year 2025, mainly due to higher share
+repurchases.
+Liquidity
+Our primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of April 27, 2025, we had $53.7
+billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next
+twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and
+capital resources, including our access to external capital, to ensure we can finance future capital requirements.
+Our marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly-rated corporations
+and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly-rated financial institutions. These marketable
+securities are primarily denominated in U.S. dollars. Refer to Note 5 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this
+Quarterly Report on Form 10-Q for additional information.
+Except for approximately $1.7 billion of cash, cash equivalents, and marketable securities held outside the U.S. for which we have not accrued any related
+foreign or state taxes if we repatriate these amounts to the U.S., substantially all of our cash, cash equivalents and marketable securities held outside the U.S. at
+the end of the first quarter of fiscal year 2026 are available for use in the U.S. without incurring additional U.S. federal income taxes. We plan to make two
+estimated federal and state tax payments in the second quarter of fiscal year 2026, a substantial increase as compared with no estimated tax payments in the
+first quarter of fiscal year 2026.
+Capital Return to Shareholders
+We repurchased 126 million shares of our common stock for $14.5 billion during the first quarter of fiscal years 2026. As of April 27, 2025, we were authorized,
+subject to certain specifications, to repurchase up to $24.3 billion of our common stock.
+From April 28, 2025 through May 23, 2025, we repurchased 19 million shares for $2.3 billion pursuant to a pre-established trading plan. Our share repurchase
+program aims to offset dilution from shares issued to employees while maintaining adequate liquidity to meet our operating requirements. We may pursue
+additional share repurchases as we weigh market factors and other investment opportunities.
+We paid cash dividends to our shareholders of $244 million and $98 million during the first quarter of fiscal years 2026 and 2025, respectively. The payment of
+future cash dividends is subject to our Board of Directors' continuing determination that the declaration of dividends is in the best interests of our shareholders.
+28
+
+Table Data:
+Cash and cash equivalents | $ | 15,234 |  | $ | 8,589
+Marketable securities | 38,457 |  | 34,621
+Cash, cash equivalents and marketable securities | $ | 53,691 |  | $ | 43,210
+Net cash provided by operating activities | $ | 27,414 |  | $ | 15,345
+Net cash used in investing activities | $ | (5,216) |  | $ | (5,693)
+Net cash used in financing activities | $ | (15,553) |  | $ | (9,345)
+
+Structured Layout:
+Liquidity and Capital Resources
+
+
+ 
+Apr 27, 2025
+Jan 26, 2025
+
+
+ 
+(In millions)
+Cash and cash equivalents
+$
+15,234 
+$
+8,589 
+Marketable securities
+38,457 
+34,621 
+
+
+Cash, cash equivalents and marketable securities
+$
+53,691 
+$
+43,210 
+
+
+ 
+Three Months Ended
+
+
+Apr 27, 2025
+Apr 28, 2024
+
+
+ 
+(In millions)
+Net cash provided by operating activities
+$
+27,414 
+$
+15,345 
+Net cash used in investing activities
+$
+(5,216)
+$
+(5,693)
+Net cash used in financing activities
+$
+(15,553)
+$
+(9,345)
+
+
+Our investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain
+maturity limits on our portfolio.
+
+
+Cash provided by operating activities increased in the first quarter of fiscal year 2026 compared to the first quarter of fiscal year 2025, due to higher revenue and
+timing of cash collections.
+
+
+Cash used in investing activities decreased in the first quarter of fiscal year 2026 compared to the first quarter of fiscal year 2025, primarily driven by lower net
+purchases of marketable securities, partially offset by higher purchases of property and equipment.
+
+
+Cash used in financing activities increased in the first quarter of fiscal year 2026 compared to the first quarter of fiscal year 2025, mainly due to higher share
+repurchases.
+
+
+Liquidity
+
+
+Our primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of April 27, 2025, we had $53.7
+billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next
+twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and
+capital resources, including our access to external capital, to ensure we can finance future capital requirements.
+
+
+Our marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly-rated corporations
+and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly-rated financial institutions. These marketable
+securities are primarily denominated in U.S. dollars. Refer to Note 5 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this
+Quarterly Report on Form 10-Q for additional information.
+
+
+Except for approximately $1.7 billion of cash, cash equivalents, and marketable securities held outside the U.S. for which we have not accrued any related
+foreign or state taxes if we repatriate these amounts to the U.S., substantially all of our cash, cash equivalents and marketable securities held outside the U.S. at
+the end of the first quarter of fiscal year 2026 are available for use in the U.S. without incurring additional U.S. federal income taxes. We plan to make two
+estimated federal and state tax payments in the second quarter of fiscal year 2026, a substantial increase as compared with no estimated tax payments in the
+first quarter of fiscal year 2026.
+
+
+Capital Return to Shareholders
+
+
+We repurchased 126 million shares of our common stock for $14.5 billion during the first quarter of fiscal years 2026. As of April 27, 2025, we were authorized,
+subject to certain specifications, to repurchase up to $24.3 billion of our common stock.
+
+
+From April 28, 2025 through May 23, 2025, we repurchased 19 million shares for $2.3 billion pursuant to a pre-established trading plan. Our share repurchase
+program aims to offset dilution from shares issued to employees while maintaining adequate liquidity to meet our operating requirements. We may pursue
+additional share repurchases as we weigh market factors and other investment opportunities.
+
+
+We paid cash dividends to our shareholders of $244 million and $98 million during the first quarter of fiscal years 2026 and 2025, respectively. The payment of
+future cash dividends is subject to our Board of Directors' continuing determination that the declaration of dividends is in the best interests of our shareholders.
+
+
+28
+--- END CONTEXT: nvidia_10q.pdf, Page 28 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 12 ---
+Source Image: document_images/nvidia_10q_page_012.png
+Text Content:
+NVIDIA CORPORATION AND SUBSIDIARIES
+NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued)
+(Unaudited)
+Note 6 - Fair Value of Financial Assets and Non-marketable Equity Securities
+The fair values of our financial assets are determined using quoted market prices of identical assets or market prices of similar assets from active markets. We
+review fair value classification on a quarterly basis.
+Pricing Category
+Fair Value at
+Apr 27, 2025
+Jan 26, 2025
+(In millions)
+Assets
+Cash equivalents and marketable securities:
+Money market funds
+Level 1
+$
+6,522 
+$
+3,760 
+Publicly-held equity securities
+Level 1
+$
+1,251 
+$
+381 
+Debt securities issued by the U.S. Treasury
+Level 2
+$
+23,251 
+$
+16,769 
+Corporate debt securities
+Level 2
+$
+20,051 
+$
+18,526 
+Debt securities issued by U.S. government agencies
+Level 2
+$
+2,145 
+$
+2,777 
+Certificates of deposit
+Level 2
+$
+126 
+$
+97 
+Foreign government bonds
+Level 2
+$
+41 
+$
+177 
+Non-marketable Equity Securities
+Our non-marketable equity securities are recorded in long-term other assets on our Condensed Consolidated Balance Sheets and valued under the
+measurement alternative. Gains and losses on these investments, realized and unrealized, are recognized in Other income (expense), net on our Condensed
+Consolidated Statements of Income.
+Adjustments to the carrying value of our non-marketable equity securities during the first quarter of fiscal years 2026 and 2025 were as follows:
+Three Months Ended
+Apr 27, 2025
+Apr 28, 2024
+(In millions)
+Balance at beginning of period
+$
+3,387 
+$
+1,321 
+Adjustments related to non-marketable equity securities:
+Net additions
+649 
+127 
+Unrealized gains
+63 
+15 
+Reclassification (1)
+(843)
+— 
+Impairments and unrealized losses
+(16)
+— 
+Balance at end of period
+$
+3,240 
+$
+1,463 
+(1)    In the first quarter of fiscal year 2026, our investment in CoreWeave was reclassified from non-marketable equity securities to marketable securities following public market trading.
+Non-marketable equity securities had cumulative gross unrealized gains of $396 million and $285 million, and cumulative gross unrealized losses and
+impairments of $110 million and $45 million on securities held as of April 27, 2025 and April 28, 2024, respectively.
+12
+
+Table Data:
+Assets |  |  |  |  | 
+Cash equivalents and marketable securities: |  |  |  |  | 
+Money market funds | Level 1 |  | $ | 6,522 |  | $ | 3,760
+Publicly-held equity securities | Level 1 |  | $ | 1,251 |  | $ | 381
+Debt securities issued by the U.S. Treasury | Level 2 |  | $ | 23,251 |  | $ | 16,769
+Corporate debt securities | Level 2 |  | $ | 20,051 |  | $ | 18,526
+Debt securities issued by U.S. government agencies | Level 2 |  | $ | 2,145 |  | $ | 2,777
+Certificates of deposit | Level 2 |  | $ | 126 |  | $ | 97
+Foreign government bonds | Level 2 |  | $ | 41 |  | $ | 177
+Balance at beginning of period | $ | 3,387 |  | $ 1,321
+Adjustments related to non-marketable equity securities: |  |  | 
+Net additions | 649 |  | 127
+Unrealized gains | 63 |  | 15
+Reclassification (1) | (843) |  | —
+Impairments and unrealized losses | (16) |  | —
+Balance at end of period | $ | 3,240 |  | $ 1,463
+
+Structured Layout:
+NVIDIA CORPORATION AND SUBSIDIARIES
+NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued)
+
+
+(Unaudited)
+
+
+Note 6 - Fair Value of Financial Assets and Non-marketable Equity Securities
+
+
+The fair values of our financial assets are determined using quoted market prices of identical assets or market prices of similar assets from active markets. We
+review fair value classification on a quarterly basis.
+
+
+Pricing Category
+
+
+Fair Value at
+
+
+Apr 27, 2025
+Jan 26, 2025
+
+
+(In millions)
+Assets
+Cash equivalents and marketable securities:
+
+
+Money market funds
+Level 1
+$
+6,522 
+$
+3,760 
+Publicly-held equity securities
+Level 1
+$
+1,251 
+$
+381 
+Debt securities issued by the U.S. Treasury
+Level 2
+$
+23,251 
+$
+16,769 
+Corporate debt securities
+Level 2
+$
+20,051 
+$
+18,526 
+Debt securities issued by U.S. government agencies
+Level 2
+$
+2,145 
+$
+2,777 
+Certificates of deposit
+Level 2
+$
+126 
+$
+97 
+Foreign government bonds
+Level 2
+$
+41 
+$
+177 
+
+
+Non-marketable Equity Securities
+
+
+Our non-marketable equity securities are recorded in long-term other assets on our Condensed Consolidated Balance Sheets and valued under the
+measurement alternative. Gains and losses on these investments, realized and unrealized, are recognized in Other income (expense), net on our Condensed
+Consolidated Statements of Income.
+
+
+Adjustments to the carrying value of our non-marketable equity securities during the first quarter of fiscal years 2026 and 2025 were as follows:
+
+
+Three Months Ended
+Apr 27, 2025
+Apr 28, 2024
+
+
+(In millions)
+Balance at beginning of period
+$
+3,387 
+$
+1,321 
+Adjustments related to non-marketable equity securities:
+
+
+Net additions
+649 
+127 
+Unrealized gains
+63 
+15 
+Reclassification (1)
+(843)
+— 
+Impairments and unrealized losses
+(16)
+— 
+Balance at end of period
+$
+3,240 
+$
+1,463 
+
+
+(1)    In the first quarter of fiscal year 2026, our investment in CoreWeave was reclassified from non-marketable equity securities to marketable securities following public market trading.
+
+
+Non-marketable equity securities had cumulative gross unrealized gains of $396 million and $285 million, and cumulative gross unrealized losses and
+impairments of $110 million and $45 million on securities held as of April 27, 2025 and April 28, 2024, respectively.
+
+
+12
+--- END CONTEXT: nvidia_10q.pdf, Page 12 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 27 ---
+Source Image: document_images/nvidia_10q_page_027.png
+Text Content:
+Operating Expenses
+ 
+Three Months Ended
+ 
+Apr 27, 2025
+Apr 28, 2024
+$
+Change
+%
+Change
+ 
+($ in millions)
+Research and development expenses $
+3,989 
+$
+2,720 
+$
+1,269 
+47 %
+Sales, general and administrative
+expenses
+1,041 
+777 
+264 
+34 %
+Total operating expenses
+$
+5,030 
+$
+3,497 
+$
+1,533 
+44 %
+The increase in research and development expenses for the first quarter of fiscal year 2026 was driven by a 34% increase in compensation and benefits,
+including stock-based compensation, reflecting employee growth and compensation increases, a 70% increase in compute and infrastructure, and a 182%
+increase in engineering development costs for new product introductions.
+The increase in sales, general and administrative expenses for the first quarter of fiscal year 2026 were primarily driven by compensation and benefits, including
+stock-based compensation, reflecting employee growth and compensation increases.
+Total Other Income (Expense), Net
+Three Months Ended
+ 
+Apr 27, 2025
+Apr 28, 2024
+$
+Change
+ 
+($ in millions)
+Interest income
+$
+515 
+$
+359 
+$
+156 
+Interest expense
+(63)
+(64)
+1 
+Other income (expense), net
+(180)
+75 
+(255)
+Total other income (expense), net
+$
+272 
+$
+370 
+$
+(98)
+The increase in interest income for the first quarter of fiscal year 2026 was primarily due to growth in cash, cash equivalents, and debt securities.
+Interest expense is comprised of coupon interest and debt discount amortization related to our notes.
+Other income (expense), net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity
+securities, and the impact of changes in foreign currency rates. The change in Other income (expense), net, compared to the first quarter of fiscal year 2025,
+was primarily driven by unrealized losses in our publicly-held equity securities due to fair value volatility in our investments, particularly CoreWeave and Arm, Inc.
+Refer to Notes 5 and 6 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for additional
+information regarding our investments in non-marketable equity securities and publicly-held equity securities.
+Income Taxes
+Income tax expense was $3.1 billion and $2.4 billion for the first quarter of fiscal years 2026 and 2025, respectively. Income tax as a percentage of income
+before income tax was an expense of 14.3% and 13.9% for the first quarter of fiscal years 2026 and 2025, respectively.
+The effective tax rate increased primarily due to a lower tax benefit from stock-based compensation, partially offset by an increase in tax benefit from the foreign-
+derived intangible income deduction.
+Given our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the
+near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could
+vary based on our assessment of all available information.
+Refer to Note 4 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for additional information.
+27
+
+Table Data:
+Research and development expenses | $ | 3,989 |  | $ | 2,720 |  | $ | 1,269 |  | 47 | %
+Sales, general and administrative
+expenses | 1,041 |  | 777 |  | 264 |  | 34 | %
+Total operating expenses | $ | 5,030 |  | $ | 3,497 |  | $ | 1,533 |  | 44 | %
+Interest income | $ | 515 |  | $ | 359 |  | $ | 156
+Interest expense | (63) |  | (64) |  | 1
+Other income (expense), net | (180) |  | 75 |  | (255)
+Total other income (expense), net | $ | 272 |  | $ | 370 |  | $ | (98)
+
+Structured Layout:
+Operating Expenses
+
+
+ 
+Three Months Ended
+
+
+ 
+Apr 27, 2025
+Apr 28, 2024
+
+
+$
+Change
+
+
+%
+Change
+
+
+ 
+($ in millions)
+Research and development expenses $
+3,989 
+$
+2,720 
+$
+1,269 
+47 %
+Sales, general and administrative
+expenses
+1,041 
+777 
+264 
+34 %
+Total operating expenses
+$
+5,030 
+$
+3,497 
+$
+1,533 
+44 %
+
+
+The increase in research and development expenses for the first quarter of fiscal year 2026 was driven by a 34% increase in compensation and benefits,
+including stock-based compensation, reflecting employee growth and compensation increases, a 70% increase in compute and infrastructure, and a 182%
+increase in engineering development costs for new product introductions.
+
+
+The increase in sales, general and administrative expenses for the first quarter of fiscal year 2026 were primarily driven by compensation and benefits, including
+stock-based compensation, reflecting employee growth and compensation increases.
+
+
+Total Other Income (Expense), Net
+
+
+Three Months Ended
+
+
+ 
+Apr 27, 2025
+Apr 28, 2024
+
+
+$
+Change
+
+
+ 
+($ in millions)
+Interest income
+$
+515 
+$
+359 
+$
+156 
+Interest expense
+(63)
+(64)
+1 
+Other income (expense), net
+(180)
+75 
+(255)
+Total other income (expense), net
+$
+272 
+$
+370 
+$
+(98)
+
+
+The increase in interest income for the first quarter of fiscal year 2026 was primarily due to growth in cash, cash equivalents, and debt securities.
+
+
+Interest expense is comprised of coupon interest and debt discount amortization related to our notes.
+
+
+Other income (expense), net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity
+securities, and the impact of changes in foreign currency rates. The change in Other income (expense), net, compared to the first quarter of fiscal year 2025,
+was primarily driven by unrealized losses in our publicly-held equity securities due to fair value volatility in our investments, particularly CoreWeave and Arm, Inc.
+Refer to Notes 5 and 6 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for additional
+information regarding our investments in non-marketable equity securities and publicly-held equity securities.
+
+
+Income Taxes
+
+
+Income tax expense was $3.1 billion and $2.4 billion for the first quarter of fiscal years 2026 and 2025, respectively. Income tax as a percentage of income
+before income tax was an expense of 14.3% and 13.9% for the first quarter of fiscal years 2026 and 2025, respectively.
+
+
+The effective tax rate increased primarily due to a lower tax benefit from stock-based compensation, partially offset by an increase in tax benefit from the foreign-
+derived intangible income deduction.
+
+
+Given our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the
+near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could
+vary based on our assessment of all available information.
+
+
+Refer to Note 4 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for additional information.
+
+
+27
+--- END CONTEXT: nvidia_10q.pdf, Page 27 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 29 ---
+Source Image: document_images/nvidia_10q_page_029.png
+Text Content:
+The U.S. Inflation Reduction Act of 2022 requires a 1% excise tax on certain share repurchases in excess of shares issued for employee compensation made
+after December 31, 2022. The excise tax is included in our share repurchase cost and was not material for the first quarter of fiscal years 2026 and 2025.
+Outstanding Indebtedness and Commercial Paper Program
+Our aggregate debt maturities as of April 27, 2025, by year payable, are as follows:
+ 
+Apr 27, 2025
+ 
+(In millions)
+Due in one to five years
+$
+3,750 
+Due in five to ten years
+1,250 
+Due in greater than ten years
+3,500 
+Unamortized debt discount and issuance costs
+(36)
+Net long-term carrying amount
+$
+8,464 
+We have a $575 million commercial paper program to support general corporate purposes. As of April 27, 2025, we had no commercial paper outstanding.
+Refer to Note 10 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for further discussion.
+Material Cash Requirements and Other Obligations
+Unrecognized tax benefits were $2.5 billion, which includes related interest and penalties, were recorded in non-current income tax payable as of April 27, 2025.
+We are unable to estimate the timing of any potential tax liability, interest payments, or penalties in individual years due to uncertainties in the underlying income
+tax positions and the timing of the effective settlement of such tax positions. Refer to Note 4 of the Notes to Condensed Consolidated Financial Statements for
+further information.
+Other than the contractual obligations described above, there were no material changes outside the ordinary course of business in our contractual obligations
+from those disclosed in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. Refer to Item 7, “Management’s Discussion and Analysis of
+Financial Condition and Results of Operations - Liquidity and Capital Resources” in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025
+for a description of our contractual obligations. For a description of our long-term debt, purchase obligations, and operating lease obligations, refer to Notes 10,
+11, and 14 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q, respectively.
+Climate Change
+To date, there has been no material impact to our results of operations associated with global sustainability regulations, compliance, costs from sourcing
+renewable energy or climate-related business trends.
+Adoption of New and Recently Issued Accounting Pronouncements
+There has been no adoption of any new and recently issued accounting pronouncements.
+Item 3. Quantitative and Qualitative Disclosures about Market Risk
+Investment and Interest Rate Risk
+Financial market risks related to investment and interest rate risk are described in Part II, Item 7A, “Quantitative and Qualitative Disclosures About Market Risk”
+in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. As of April 27, 2025, there have been no material changes to the financial market
+risks described as of January 26, 2025.
+Foreign Exchange Rate Risk
+The impact of foreign currency transactions related to foreign exchange rate risk is described in Part II, Item 7A, “Quantitative and Qualitative Disclosures About
+Market Risk” in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. As of April 27, 2025, there have been no material changes to the
+foreign exchange rate risks described as of January 26, 2025.
+29
+
+Table Data:
+Due in one to five years |  | $ | 3,750
+Due in five to ten years |  | 1,250
+Due in greater than ten years |  | 3,500
+Unamortized debt discount and issuance costs |  | (36)
+Net long-term carrying amount |  | $ | 8,464
+
+Structured Layout:
+The U.S. Inflation Reduction Act of 2022 requires a 1% excise tax on certain share repurchases in excess of shares issued for employee compensation made
+after December 31, 2022. The excise tax is included in our share repurchase cost and was not material for the first quarter of fiscal years 2026 and 2025.
+
+
+Outstanding Indebtedness and Commercial Paper Program
+
+
+Our aggregate debt maturities as of April 27, 2025, by year payable, are as follows:
+
+
+ 
+Apr 27, 2025
+
+
+ 
+(In millions)
+Due in one to five years
+$
+3,750 
+Due in five to ten years
+1,250 
+Due in greater than ten years
+3,500 
+Unamortized debt discount and issuance costs
+(36)
+
+
+Net long-term carrying amount
+$
+8,464 
+
+
+We have a $575 million commercial paper program to support general corporate purposes. As of April 27, 2025, we had no commercial paper outstanding.
+
+
+Refer to Note 10 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q for further discussion.
+
+
+Material Cash Requirements and Other Obligations
+
+
+Unrecognized tax benefits were $2.5 billion, which includes related interest and penalties, were recorded in non-current income tax payable as of April 27, 2025.
+We are unable to estimate the timing of any potential tax liability, interest payments, or penalties in individual years due to uncertainties in the underlying income
+tax positions and the timing of the effective settlement of such tax positions. Refer to Note 4 of the Notes to Condensed Consolidated Financial Statements for
+further information.
+
+
+Other than the contractual obligations described above, there were no material changes outside the ordinary course of business in our contractual obligations
+from those disclosed in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. Refer to Item 7, “Management’s Discussion and Analysis of
+Financial Condition and Results of Operations - Liquidity and Capital Resources” in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025
+for a description of our contractual obligations. For a description of our long-term debt, purchase obligations, and operating lease obligations, refer to Notes 10,
+11, and 14 of the Notes to Condensed Consolidated Financial Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q, respectively.
+
+
+Climate Change
+
+
+To date, there has been no material impact to our results of operations associated with global sustainability regulations, compliance, costs from sourcing
+renewable energy or climate-related business trends.
+
+
+Adoption of New and Recently Issued Accounting Pronouncements
+
+
+There has been no adoption of any new and recently issued accounting pronouncements.
+
+
+Item 3. Quantitative and Qualitative Disclosures about Market Risk
+
+
+Investment and Interest Rate Risk
+
+
+Financial market risks related to investment and interest rate risk are described in Part II, Item 7A, “Quantitative and Qualitative Disclosures About Market Risk”
+in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. As of April 27, 2025, there have been no material changes to the financial market
+risks described as of January 26, 2025.
+
+
+Foreign Exchange Rate Risk
+The impact of foreign currency transactions related to foreign exchange rate risk is described in Part II, Item 7A, “Quantitative and Qualitative Disclosures About
+Market Risk” in our Annual Report on Form 10-K for the fiscal year ended January 26, 2025. As of April 27, 2025, there have been no material changes to the
+foreign exchange rate risks described as of January 26, 2025.
+
+
+29
+--- END CONTEXT: nvidia_10q.pdf, Page 29 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 10 ---
+Source Image: document_images/nvidia_10q_page_010.png
+Text Content:
+NVIDIA CORPORATION AND SUBSIDIARIES
+NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued)
+(Unaudited)
+Note 4 - Income Taxes
+Income tax expense was $3.1 billion and $2.4 billion for the first quarter of fiscal years 2026 and 2025, respectively. Income tax as a percentage of income
+before income tax was an expense of 14.3% and 13.9% for the first quarter of fiscal years 2026 and 2025, respectively.
+The effective tax rate increased primarily due to a lower tax benefit from stock-based compensation, partially offset by an increase in tax benefit from the foreign-
+derived intangible income deduction.
+Our effective tax rates for the first quarter of fiscal years 2026 and 2025 were lower than the U.S. federal statutory rate of 21% primarily due to tax benefits from
+the foreign-derived intangible income deduction, stock-based compensation, income earned in jurisdictions that are subject to taxes at rates lower than the U.S.
+federal statutory tax rate, and the U.S. federal research tax credit.
+Given our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the
+near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could
+vary based on our assessment of all available information.
+While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position
+will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position. Accordingly, our provisions on federal,
+state and foreign tax related matters to be recorded in the future may change as revised estimates are made or the underlying matters are settled or otherwise
+resolved with the respective tax authorities.
+Note 5 - Cash Equivalents and Marketable Securities
+The following is a summary of cash equivalents and marketable securities:
+ 
+Apr 27, 2025
+Amortized
+Cost
+Unrealized
+Gain
+Unrealized
+Loss
+Estimated
+Fair Value
+Reported as
+ 
+Cash Equivalents
+Marketable
+Securities
+ 
+(In millions)
+Debt securities issued by the U.S. Treasury $
+23,135 
+$
+120 
+$
+(4)
+$
+23,251 
+$
+5,414 
+$
+17,837 
+Corporate debt securities
+19,976 
+85 
+(10)
+20,051 
+2,868 
+17,183 
+Money market funds
+6,522 
+— 
+— 
+6,522 
+6,522 
+— 
+Debt securities issued by U.S. government
+agencies
+2,134 
+12 
+(1)
+2,145 
+— 
+2,145 
+Certificates of deposit
+126 
+— 
+— 
+126 
+126 
+— 
+Foreign government bonds
+40 
+1 
+— 
+41 
+— 
+41 
+Total debt securities with fair value
+adjustments recorded in other comprehensive
+income
+51,933 
+218 
+(15)
+52,136 
+14,930 
+37,206 
+Publicly-held equity securities (1)
+1,251 
+— 
+1,251 
+Total
+$
+51,933 
+$
+218 
+$
+(15)
+$
+53,387 
+$
+14,930 
+$
+38,457 
+(1)    The balance as of the first quarter of fiscal year 2026 includes an investment in CoreWeave, Inc., or CoreWeave, which was reclassified from non-marketable equity securities to marketable securities
+following public market trading. The fair value of the investment as of April 27, 2025 was $1 billion and is subject to a short-term restriction on the ability to sell.
+Net unrealized losses on investments in publicly-held equity securities held at period end were $222  million for the first quarter of fiscal year 2026. Net
+unrealized gains on investments in publicly-held equity securities held at period end were not significant for the first quarter of fiscal year 2025.
+10
+
+Table Data:
+Debt securities issued by the U.S. Treasury | $ | 23,135 |  | $ | 120 |  | $ | (4) |  | $ | 23,251 |  | $ | 5,414 |  | $ | 17,837
+Corporate debt securities | 19,976 |  | 85 |  | (10) |  | 20,051 |  | 2,868 |  | 17,183
+Money market funds | 6,522 |  | — |  | — |  | 6,522 |  | 6,522 |  | —
+Debt securities issued by U.S. government
+agencies | 2,134 |  | 12 |  | (1) |  | 2,145 |  | — |  | 2,145
+Certificates of deposit | 126 |  | — |  | — |  | 126 |  | 126 |  | —
+Foreign government bonds | 40 |  | 1 |  | — |  | 41 |  | — |  | 41
+Total debt securities with fair value
+adjustments recorded in other comprehensive
+income | 51,933 |  | 218 |  | (15) |  | 52,136 |  | 14,930 |  | 37,206
+Publicly-held equity securities (1) |  |  |  |  |  |  | 1,251 |  | — |  | 1,251
+Total | $ | 51,933 |  | $ | 218 |  | $ | (15) |  | $ | 53,387 |  | $ | 14,930 |  | $ | 38,457
+
+Structured Layout:
+NVIDIA CORPORATION AND SUBSIDIARIES
+NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued)
+
+
+(Unaudited)
+
+
+Note 4 - Income Taxes
+
+
+Income tax expense was $3.1 billion and $2.4 billion for the first quarter of fiscal years 2026 and 2025, respectively. Income tax as a percentage of income
+before income tax was an expense of 14.3% and 13.9% for the first quarter of fiscal years 2026 and 2025, respectively.
+
+
+The effective tax rate increased primarily due to a lower tax benefit from stock-based compensation, partially offset by an increase in tax benefit from the foreign-
+derived intangible income deduction.
+
+
+Our effective tax rates for the first quarter of fiscal years 2026 and 2025 were lower than the U.S. federal statutory rate of 21% primarily due to tax benefits from
+the foreign-derived intangible income deduction, stock-based compensation, income earned in jurisdictions that are subject to taxes at rates lower than the U.S.
+federal statutory tax rate, and the U.S. federal research tax credit.
+
+
+Given our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the
+near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could
+vary based on our assessment of all available information.
+
+
+While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position
+will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position. Accordingly, our provisions on federal,
+state and foreign tax related matters to be recorded in the future may change as revised estimates are made or the underlying matters are settled or otherwise
+resolved with the respective tax authorities.
+
+
+Note 5 - Cash Equivalents and Marketable Securities
+
+
+The following is a summary of cash equivalents and marketable securities:
+
+
+ 
+Apr 27, 2025
+
+
+Amortized
+
+
+Cost
+
+
+Unrealized
+
+
+Gain
+
+
+Unrealized
+
+
+Loss
+
+
+Estimated
+Fair Value
+
+
+Reported as
+
+
+ 
+Cash Equivalents
+
+
+Marketable
+
+
+Securities
+
+
+ 
+(In millions)
+Debt securities issued by the U.S. Treasury $
+23,135 
+$
+120 
+$
+(4)
+$
+23,251 
+$
+5,414 
+$
+17,837 
+Corporate debt securities
+19,976 
+85 
+(10)
+20,051 
+2,868 
+17,183 
+Money market funds
+6,522 
+— 
+— 
+6,522 
+6,522 
+— 
+Debt securities issued by U.S. government
+agencies
+2,134 
+12 
+(1)
+2,145 
+— 
+2,145 
+Certificates of deposit
+126 
+— 
+— 
+126 
+126 
+— 
+Foreign government bonds
+40 
+1 
+— 
+41 
+— 
+41 
+Total debt securities with fair value
+adjustments recorded in other comprehensive
+income
+51,933 
+218 
+(15)
+52,136 
+14,930 
+37,206 
+Publicly-held equity securities (1)
+1,251 
+— 
+1,251 
+
+
+Total
+$
+51,933 
+$
+218 
+$
+(15)
+$
+53,387 
+$
+14,930 
+$
+38,457 
+
+
+(1)    The balance as of the first quarter of fiscal year 2026 includes an investment in CoreWeave, Inc., or CoreWeave, which was reclassified from non-marketable equity securities to marketable securities
+
+
+following public market trading. The fair value of the investment as of April 27, 2025 was $1 billion and is subject to a short-term restriction on the ability to sell.
+
+
+Net unrealized losses on investments in publicly-held equity securities held at period end were $222  million for the first quarter of fiscal year 2026. Net
+unrealized gains on investments in publicly-held equity securities held at period end were not significant for the first quarter of fiscal year 2025.
+
+
+10
+--- END CONTEXT: nvidia_10q.pdf, Page 10 ---
+
+--- START CONTEXT: nvidia_10q.pdf, Page 22 ---
+Source Image: document_images/nvidia_10q_page_022.png
+Text Content:
+Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations
+Forward-Looking Statements 
+This Quarterly Report on Form 10-Q contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and
+Section 21E of the Securities Exchange Act of 1934, as amended, which are subject to the “safe harbor” created by those sections based on management’s
+beliefs and assumptions and on information currently available to management. In some cases, you can identify forward-looking statements by terms such as
+“may,” “will,” “should,” “could,” “goal,” “would,” “expect,” “plan,” “anticipate,” “believe,” “estimate,” “project,” “predict,” “potential” and similar expressions intended
+to identify forward-looking statements. These statements involve known and unknown risks, uncertainties and other factors, which may cause our actual results,
+performance, time frames or achievements to be materially different from any future results, performance, time frames or achievements expressed or implied by
+the forward-looking statements. We discuss many of these risks, uncertainties and other factors in this Quarterly Report on Form 10-Q and our Annual Report on
+Form 10-K for the fiscal year ended January 26, 2025 in greater detail under the heading “Risk Factors” of such reports. Given these risks, uncertainties, and
+other factors, you should not place undue reliance on these forward-looking statements. Also, these forward-looking statements represent our estimates and
+assumptions only as of the date of this filing. You should read this Quarterly Report on Form 10-Q completely and understand that our actual future results may
+be materially different from what we expect. We hereby qualify our forward-looking statements by these cautionary statements. Except as required by law, we
+assume no obligation to update these forward-looking statements publicly, or to update the reasons actual results could differ materially from those anticipated in
+these forward-looking statements, even if new information becomes available in the future.
+All references to “NVIDIA,” “we,” “us,” “our” or the “Company” mean NVIDIA Corporation and its subsidiaries.
+© 2025 NVIDIA Corporation. All rights reserved.
+The following discussion and analysis of our financial condition and results of operations should be read in conjunction with the risk factors set forth in Item 1A.
+“Risk Factors” of our Annual Report on Form 10-K for the fiscal year ended January 26, 2025 and Part II, Item 1A. “Risk Factors” of this Quarterly Report on
+Form 10-Q and our Condensed Consolidated Financial Statements and related Notes thereto, as well as other cautionary statements and risks described
+elsewhere in this Quarterly Report on Form 10-Q and our other filings with the SEC, before deciding to purchase, hold, or sell shares of our common stock.
+Overview
+Our Company and Our Businesses
+NVIDIA pioneered accelerated computing to help solve the most challenging computational problems. Since our original focus on PC graphics, we have
+expanded to several other large and important computationally intensive fields. Fueled by the sustained demand for exceptional 3D graphics and the scale of the
+gaming market, NVIDIA has leveraged its GPU architecture to create platforms for scientific computing, AI, data science, AV, robotics, and digital twin
+applications.
+Our two operating segments are "Compute & Networking" and "Graphics," as described in Note 13 of the Notes to Condensed Consolidated Financial
+Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q.
+Headquartered in Santa Clara, California, NVIDIA was incorporated in California in April 1993 and reincorporated in Delaware in April 1998.
+Recent Developments, Future Objectives and Challenges
+Revenue growth in the first quarter of fiscal year 2026 was driven by data center compute and networking platforms for accelerated computing and AI solutions.
+Our Blackwell GPU revenue ramp continued during the quarter, extending beyond large cloud service providers to include consumer internet companies and
+regional cloud service providers.
+On April 9, 2025, the U.S. government, or USG, informed us that it requires a license for export to China (including Hong Kong and Macau) and D:5 countries, or
+to companies headquartered or with an ultimate parent therein, of our H20 integrated circuits and any other circuits achieving the H20’s memory bandwidth,
+interconnect bandwidth, or combination thereof. As a result of these new requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026
+associated with H20 excess inventory and purchase obligations as the demand for H20 products diminished. The $4.5 billion charge was less than what we
+initially anticipated as we were able to re-use certain materials. Sales of our H20 products were $4.6 billion for the first quarter of fiscal year 2026 prior to the
+new export licensing requirements. The H20 export licensing requirements have impacted our current revenue and will also negatively affect our future revenue.
+We are still evaluating our limited options to supply Data Center compute products compliant with the USG’s export control rules. The export controls applicable
+to China are complex and address a variety of parameters, including the total processing performance of a chip, the “performance density” of a chip, the
+interconnect bandwidth of a chip, and the memory bandwidth of a chip. We may be unable to create a competitive product for China’s data center market that
+receives approval from the USG. In that event, we would effectively be foreclosed from competing in China's data center computing/compute market, with a
+material and adverse impact on our business, operating results, and financial condition.
+22
+
+Structured Layout:
+Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations
+
+
+Forward-Looking Statements 
+This Quarterly Report on Form 10-Q contains forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and
+Section 21E of the Securities Exchange Act of 1934, as amended, which are subject to the “safe harbor” created by those sections based on management’s
+beliefs and assumptions and on information currently available to management. In some cases, you can identify forward-looking statements by terms such as
+“may,” “will,” “should,” “could,” “goal,” “would,” “expect,” “plan,” “anticipate,” “believe,” “estimate,” “project,” “predict,” “potential” and similar expressions intended
+to identify forward-looking statements. These statements involve known and unknown risks, uncertainties and other factors, which may cause our actual results,
+performance, time frames or achievements to be materially different from any future results, performance, time frames or achievements expressed or implied by
+the forward-looking statements. We discuss many of these risks, uncertainties and other factors in this Quarterly Report on Form 10-Q and our Annual Report on
+Form 10-K for the fiscal year ended January 26, 2025 in greater detail under the heading “Risk Factors” of such reports. Given these risks, uncertainties, and
+other factors, you should not place undue reliance on these forward-looking statements. Also, these forward-looking statements represent our estimates and
+assumptions only as of the date of this filing. You should read this Quarterly Report on Form 10-Q completely and understand that our actual future results may
+be materially different from what we expect. We hereby qualify our forward-looking statements by these cautionary statements. Except as required by law, we
+assume no obligation to update these forward-looking statements publicly, or to update the reasons actual results could differ materially from those anticipated in
+these forward-looking statements, even if new information becomes available in the future.
+
+
+All references to “NVIDIA,” “we,” “us,” “our” or the “Company” mean NVIDIA Corporation and its subsidiaries.
+
+
+© 2025 NVIDIA Corporation. All rights reserved.
+
+
+The following discussion and analysis of our financial condition and results of operations should be read in conjunction with the risk factors set forth in Item 1A.
+“Risk Factors” of our Annual Report on Form 10-K for the fiscal year ended January 26, 2025 and Part II, Item 1A. “Risk Factors” of this Quarterly Report on
+Form 10-Q and our Condensed Consolidated Financial Statements and related Notes thereto, as well as other cautionary statements and risks described
+elsewhere in this Quarterly Report on Form 10-Q and our other filings with the SEC, before deciding to purchase, hold, or sell shares of our common stock.
+
+
+Overview
+
+
+Our Company and Our Businesses
+
+
+NVIDIA pioneered accelerated computing to help solve the most challenging computational problems. Since our original focus on PC graphics, we have
+expanded to several other large and important computationally intensive fields. Fueled by the sustained demand for exceptional 3D graphics and the scale of the
+gaming market, NVIDIA has leveraged its GPU architecture to create platforms for scientific computing, AI, data science, AV, robotics, and digital twin
+applications.
+
+
+Our two operating segments are "Compute & Networking" and "Graphics," as described in Note 13 of the Notes to Condensed Consolidated Financial
+Statements in Part I, Item 1 of this Quarterly Report on Form 10-Q.
+
+
+Headquartered in Santa Clara, California, NVIDIA was incorporated in California in April 1993 and reincorporated in Delaware in April 1998.
+
+
+Recent Developments, Future Objectives and Challenges
+
+
+Revenue growth in the first quarter of fiscal year 2026 was driven by data center compute and networking platforms for accelerated computing and AI solutions.
+Our Blackwell GPU revenue ramp continued during the quarter, extending beyond large cloud service providers to include consumer internet companies and
+regional cloud service providers.
+
+
+On April 9, 2025, the U.S. government, or USG, informed us that it requires a license for export to China (including Hong Kong and Macau) and D:5 countries, or
+to companies headquartered or with an ultimate parent therein, of our H20 integrated circuits and any other circuits achieving the H20’s memory bandwidth,
+interconnect bandwidth, or combination thereof. As a result of these new requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026
+associated with H20 excess inventory and purchase obligations as the demand for H20 products diminished. The $4.5 billion charge was less than what we
+initially anticipated as we were able to re-use certain materials. Sales of our H20 products were $4.6 billion for the first quarter of fiscal year 2026 prior to the
+new export licensing requirements. The H20 export licensing requirements have impacted our current revenue and will also negatively affect our future revenue.
+We are still evaluating our limited options to supply Data Center compute products compliant with the USG’s export control rules. The export controls applicable
+to China are complex and address a variety of parameters, including the total processing performance of a chip, the “performance density” of a chip, the
+interconnect bandwidth of a chip, and the memory bandwidth of a chip. We may be unable to create a competitive product for China’s data center market that
+receives approval from the USG. In that event, we would effectively be foreclosed from competing in China's data center computing/compute market, with a
+material and adverse impact on our business, operating results, and financial condition.
+
+
+22
+--- END CONTEXT: nvidia_10q.pdf, Page 22 --- images: 

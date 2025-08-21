@@ -1,0 +1,6 @@
+Question: Given Palantir’s total revenue excluding strategic commercial contracts and adjusted operating income for Q1 2024 and Q1 2025, and its US commercial customer counts for the trailing twelve months ended March 31, 2024 and March 31, 2025, by what percentage did operating expense per US commercial customer change year-over-year between Q1 2024 and Q1 2025?
+
+Attempt 1 Query: Given Palantir’s total revenue excluding strategic commercial contracts and adjusted operating income for Q1 2024 and Q1 2025, and its US commercial customer counts for the trailing twelve months ended March 31, 2024 and March 31, 2025, by what percentage did operating expense per US commercial customer change year-over-year between Q1 2024 and Q1 2025?
+
+Image Paths:
+['document_images/palantir_q1_investor_presentation_page_022.png', 'document_images/palantir_q1_investor_presentation_page_031.png', 'document_images/palantir_q1_investor_presentation_page_003.png']

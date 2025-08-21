@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import base64
 import hashlib
 import io
 import json
@@ -286,7 +287,6 @@ class KevinEvaluator(BaseRAGEvaluator):
             
             doc_hash = hashlib.sha256(doc_file.read_bytes()).hexdigest()
             cache_file = self.embedding_cache_dir / f"{doc_file.stem}_{doc_hash[:10]}_multivector.npz"
-
             if cache_file.exists():
                 print(f"    ✓ Loading embeddings from cache: {cache_file.name}")
                 data = np.load(cache_file, allow_pickle=True)
@@ -366,30 +366,90 @@ class KevinEvaluator(BaseRAGEvaluator):
                 cur.execute("CREATE INDEX patch_embeddings_embedding_idx ON patch_embeddings USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);")
                 conn.commit()
 
+    def _build_multivector_context(self, document_pages: List[ColPaliDocumentPage]) -> str:
+        """Build context from multi-vector document pages."""
+        contexts = []
+        for page in document_pages:
+            context_parts = [
+                f"--- START CONTEXT: {page.document_id}, Page {page.page_number} ---",
+                f"Source Image: {page.image_path}",
+                page.content.strip(),
+                f"--- END CONTEXT: {page.document_id}, Page {page.page_number} ---"
+            ]
+            contexts.append("\n".join(context_parts))
+        return "\n\n".join(contexts)
+
     def query(self, client: dict, question: str, **kwargs) -> str:
-        """Query using ColPali's multi-vector approach with enhanced debugging."""
+        """Query using ColPali's multi-vector approach with enhanced debugging and a retry mechanism."""
         if DEBUG_MODE:
             print(f"\n[DEBUG] === QUERY START: {question} ===")
         
+        max_retries = 1  # One retry means two attempts total
+        all_reranked_pages = []
+        seen_page_ids = set()
+        current_query = question
+
         try:
-            query_embeddings = self._get_query_embeddings(client, question)
-            retrieved_pages = self._retrieve_and_score_pages(client, query_embeddings)
-            
-            if not retrieved_pages:
-                return "Could not find relevant visual content for this question."
+            for i in range(max_retries + 1):
+                is_final_attempt = (i == max_retries)
+                
+                if DEBUG_MODE:
+                    print(f"[DEBUG] Attempt {i+1}/{max_retries+1} with query: '{current_query}'")
 
-            reranked_pages = self._rerank_pages(client, question, retrieved_pages)
-            
-            # Fine-tuning: previously I limited this to only the top 7 reranked pages, but realized giving it all 20 pages
-            # Led to better performance.
-            context = self._build_multivector_context(reranked_pages)
-            
-            if DEBUG_MODE:
-                debug_context_file = self.debug_dir / f"context_debug_{hash(question) % 10000}.txt"
-                debug_context_file.write_text(f"Question: {question}\n\nContext:\n{context}", encoding='utf-8')
-                print(f"[DEBUG] Context saved to: {debug_context_file}")
+                # Retrieve and process pages for the current query
+                query_embeddings = self._get_query_embeddings(client, current_query)
+                retrieved_pages = self._retrieve_and_score_pages(client, query_embeddings)
 
-            return self._generate_answer(context, question)
+                if retrieved_pages:
+                    # Rerank using the original question for relevance, even on retries
+                    reranked_pages = self._rerank_pages(client, question, retrieved_pages)
+                    
+                    new_pages_found = False
+                    for page in reranked_pages:
+                        if page.page_id not in seen_page_ids:
+                            all_reranked_pages.append(page)
+                            seen_page_ids.add(page.page_id) 
+                            new_pages_found = True
+                    
+                    if not new_pages_found and i > 0:
+                        if DEBUG_MODE:
+                            print("[DEBUG] No new relevant pages found. Attempting to answer with existing context.")
+                
+                if not all_reranked_pages:
+                    return "Could not find relevant visual content for this question."
+
+                context = self._build_multivector_context(all_reranked_pages)
+                # Get image paths for the top 3 reranked pages
+                image_paths = [page.image_path for page in all_reranked_pages[:3]]
+                
+                if DEBUG_MODE:
+                    debug_file = self.debug_dir / f"debug_{hash(question) % 10000}_attempt_{i}.txt"
+                    debug_file.write_text(f"Question: {question}\n\nAttempt {i+1} Query: {current_query}\n\nImage Paths:\n{image_paths} \n\n Context:\n{context} images: ", encoding='utf-8')
+                    print(f"[DEBUG] Image paths for attempt {i+1} saved to: {debug_file}")
+
+                # Generate answer or a new query
+                answer = self._generate_answer(image_paths, context, question, is_retry=is_final_attempt)
+
+                if "SEARCH_QUERY:" in answer and not is_final_attempt:
+                    search_query_match = re.search(r"SEARCH_QUERY:(.*)", answer, re.DOTALL)
+                    if search_query_match:
+                        current_query = search_query_match.group(1).strip()
+                        if not current_query:  # Handle empty search query
+                            return answer.split("SEARCH_QUERY:")[0].strip()
+                        if DEBUG_MODE:
+                            print(f"[DEBUG] New search query from LLM: '{current_query}'")
+                        continue  # Go to next iteration of the loop
+                    else:
+                        # Should not happen with the right prompt.
+                        return answer
+                else:
+                    # Final answer received or final attempt made
+                    if "SEARCH_QUERY:" in answer:
+                        # If it still returns a search query on the final attempt, return the text part.
+                        return answer.split("SEARCH_QUERY:")[0].strip()
+                    return answer
+
+            return "An unexpected error occurred in the query retry loop."
 
         except Exception as e:
             print(f"\n❌ Query failed: {e}")
@@ -449,15 +509,17 @@ class KevinEvaluator(BaseRAGEvaluator):
             row = page_rows.get(page_id)
             if row:
                 combined_content = self._combine_text_sources(row['extracted_text'], row['tables_data'], row['text_blocks'])
-                retrieved_pages.append(ColPaliDocumentPage(
+                page = ColPaliDocumentPage(
                     page_id=row['id'], document_id=row['doc_id'], page_number=row['page_number'],
                     image_path=row['image_path'], content=combined_content
-                ))
+                )
+                page.score = final_scores[page_id]
+                retrieved_pages.append(page)
         
         if DEBUG_MODE:
             print("[DEBUG] Top 5 retrieved pages (pre-rerank):")
             for p in retrieved_pages[:5]:
-                print(f"  - {p.document_id} p{p.page_number} (Score: {getattr(p, 'score', 'N/A'):.4f})")
+                print(f"  - {p.document_id} p{p.page_number} (Score: {getattr(p, 'score', 0.0):.4f})")
 
         return retrieved_pages
 
@@ -477,27 +539,60 @@ class KevinEvaluator(BaseRAGEvaluator):
         
         return reranked
 
-    def _generate_answer(self, context: str, question: str) -> str:
-        """Generate the final answer using the LLM."""
-        prompt = f'''You are an expert document analyst. Your task is to answer the user's question based *only* on the provided context.
-
-CRITICAL INSTRUCTIONS:
-1. Answer ONLY based on the provided context.
-2. If the answer requires calculation, provide the final numerical answer first, then briefly show the calculation used to arrive at it. Be precise with numbers and calculations
+    def _generate_answer(self, image_paths: List[str], context: str, question: str, is_retry: bool = False) -> str:
+        """Generate the final answer using the LLM, with logic for retries, incorporating images."""
+        
+        if is_retry:
+            instruction = """CRITICAL INSTRUCTIONS:
+1. Answer the question based *ONLY* on the provided, expanded context and/or images.
+2. If the answer requires calculation, provide the final numerical answer first, then briefly show the calculation used to arrive at it. Be precise with numbers and calculations.
 3. Cite page numbers, like `(Page X)`, for every piece of data you use.
-4. If the context does not contain the information to answer the question, state only: "The provided context does not contain enough information to answer the question."
+4. If the context *still* does not contain the information to answer the question, you MUST state only: "The provided context does not contain enough information to answer the question." Do NOT ask for more information."""
+        else:
+            instruction = """CRITICAL INSTRUCTIONS:
+1.  Analyze the user's question and the provided context and/or images.
+2.  If the context contains all the necessary information, provide a direct answer.
+    - If the answer requires calculation, provide the final numerical answer first, then briefly show the calculation. Be precise.
+    - Cite page numbers, like `(Page X)`, for every accurate piece of data you use.
+3.  If the context is missing information required to fully answer the question, do two things:
+    a. First, state clearly what information is missing.
+    b. Then, on a new line, output a search query that can be used to find this missing information. The query should be prefixed with "SEARCH_QUERY:".
+    For example:
+    The context is missing the revenue for Q1 2025.
+    SEARCH_QUERY: Palantir Q1 2025 revenue figures"""
 
-Context from Document Pages:
-{context}
+        messages_content = []
+        # Add the text prompt
+        messages_content.append({"type": "text", "text": f'''You are an expert document analyst. Your task is to answer the user's question based *only* on the provided context text and images.
+
+{instruction}
+
+Context from document pages: {context}
 
 Question: {question}
 
-Final Answer:'''
+Final Answer:'''})
+
+        # Add images
+        for img_path in image_paths:
+            try:
+                with open(img_path, "rb") as image_file:
+                    encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+                messages_content.append({
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/png;base64,{encoded_image}"}
+                })
+            except FileNotFoundError:
+                print(f"    ⚠️ Image file not found: {img_path}")
+                continue
+            except Exception as e:
+                print(f"    ⚠️ Error encoding image {img_path}: {e}")
+                continue
 
         try:
             response = completion(
-                model="o4-mini",
-                messages=[{"role": "user", "content": prompt}]
+                model="o4-mini", # Using gpt-4o-mini for vision capabilities
+                messages=[{"role": "user", "content": messages_content}]
             )
             final_answer = response.choices[0].message.content
         except Exception as e:
@@ -505,7 +600,7 @@ Final Answer:'''
             return "[ERROR] Failed to generate an answer from the language model."
 
         if DEBUG_MODE:
-            print(f"\n[DEBUG] Final Generated Answer:\n{final_answer}\n")
+            print(f"\n[DEBUG] LLM Response (is_retry={is_retry}):\n{final_answer}\n")
         return final_answer
 
     def _combine_text_sources(self, text: str, tables: str, blocks: str) -> str:
@@ -520,19 +615,6 @@ Final Answer:'''
             sources.append(f"Structured Layout:\n{blocks.strip()}")
         
         return "\n\n".join(sources) if sources else "Visual elements with no extractable text."
-
-    def _build_multivector_context(self, document_pages: List[ColPaliDocumentPage]) -> str:
-        """Build context from multi-vector document pages."""
-        contexts = []
-        for page in document_pages:
-            context_parts = [
-                f"--- START CONTEXT: {page.document_id}, Page {page.page_number} ---",
-                f"Source Image: {page.image_path}",
-                page.content.strip(),
-                f"--- END CONTEXT: {page.document_id}, Page {page.page_number} ---"
-            ]
-            contexts.append("\n".join(context_parts))
-        return "\n\n".join(contexts)
 
 def main():
     os.environ["TOKENIZERS_PARALLELISM"] = "false"

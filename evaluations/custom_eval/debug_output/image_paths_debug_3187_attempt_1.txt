@@ -1,0 +1,6 @@
+Question: Based on Palantir’s reported Q1 2024 and Q1 2025 revenue figures, what are the year-over-year growth rates for total revenue, total revenue excluding strategic commercial contracts, and US revenue; what is the standard deviation across those growth rates; what is the standard deviation of the quarter-over-quarter changes in the Rule of 40 score from Q2 2023 through Q1 2025; and how do these volatility metrics relate to the Rule of 40 score reported for Q1 2025?
+
+Attempt 2 Query: Palantir Q1 2024 Q1 2025 US revenue figures
+
+Image Paths:
+['document_images/palantir_q1_investor_presentation_page_022.png', 'document_images/palantir_q1_investor_presentation_page_032.png', 'document_images/palantir_q1_investor_presentation_page_021.png']
