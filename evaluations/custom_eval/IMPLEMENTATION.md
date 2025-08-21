@@ -22,13 +22,10 @@ When new PDF documents are provided, the system systematically processes them pa
 
 *   **Reranking**: These initial candidate pages are then passed to the reranking model (FlagReranker). This model performs a deeper, more contextual analysis by comparing the original question directly against the full content of each candidate page.
 
-*   **Context Building**: The most relevant content (including extracted text, structured tables, and text blocks) from the highest-ranked pages is compiled into a comprehensive context string.
+*   **Context Building**: The most relevant content (including extracted text, structured tables, and page images) from the highest-ranked pages is compiled into a comprehensive context string.
 
 *   **Answer Generation**: Finally, this constructed context, along with the original question, is fed into o4-mini (same as `morphik_eval.py`).
 
 ## Results & Areas for Improvement
 
-We consistently get >80% accuracy (either 37 or 38 out of 45 questions). Two things can be done to improve this:
-
-*  **Fine-tuning model**: Adding better instructions gravitating towards financial analysis e.g. standard calculation algorithms. Only 4 questions out of 45 consistently receive a 'context provided is insufficient to answer question' message; therefore, we can estimate the upper bound of this fix to get us to at most 41/45 questions.
-*  **Graph-enhanced generation**: In combination with the fine-tuning above, we use the fine-tuning prompt to instruct LLM to perform entity extraction & resolution, which we will use to then build out a knowledge graph that entails the relationships between information. In the query step, after we get the most relevant chunks via vector search, we will use the knowledge graph to expand on context via graph connections. This change will ideally elevate our accuracy to ~95%. 
+The latest evaluation gives a 42/45 correctness, which is comparable to Morphik's 43/45 result.
