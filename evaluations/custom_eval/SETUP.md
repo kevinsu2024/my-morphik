@@ -61,10 +61,9 @@ This command ingests documents, runs questions, and saves results.
 python kevin_eval.py
 ```
 
-### Caching embeddings
+### Caching embeddings & document images
 
-The repo should contain embedding caches in the `.embedding_cache`, which is automatically stored each time an embedding is generated.
-If you want to test the embedding part feel free to remove the caches from this directory.
+The repo should contain embedding caches in the `.embedding_cache` as well as images for each document in `document_images`, which is automatically stored each time an embedding is generated. For a clean run (fresh ingestion + query), please remove both the caches & document images from this directory.
 
 ### Other Arguments
 -   `--skip-ingestion`: Skip document processing if data is already in the database.
